@@ -1,7 +1,45 @@
+html {
+    margin: 0 auto;
+    font: Arial;
+    font-size: 16px;
+  }
+
 header {
-    display: inline-block;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-bottom: -.5em;
+    background-color: rgb(16, 154, 196);
+}
+section{
+    padding: 1em;
+}
+footer {
+    border-radius: 5px;
+    padding: .2em;
     text-align: center;
+    background-color:rgb(16, 154, 196);
+    color: white;
+}
+.subheading {
+    border-bottom: 1px solid;
+}
+.profilePic {
+    align-content: right;
+    display: block;
+    float: right;
+    margin: .5em;
 }
 .name {
-
+    display: inline-block;
+    padding: .65em;
+    padding-left: 4em;
+    border-radius: 5px;
+    color: white;
+}
+.footnote {
+    margin-bottom: -.5em;
+}
+.update {
+    font-size: 12px;
+    color: yellow;
 }
