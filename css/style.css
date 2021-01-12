@@ -1,45 +1,47 @@
-html {
+body {
+    font: Arial, Helvetica, sans-serif;
+}
+.index_main {
+    max-width: 800px;
     margin: 0 auto;
-    font: Arial;
-    font-size: 16px;
-  }
-
-header {
-    font-size: 17px;
+}
+header, footer{
+    color: white;
     border-radius: 5px;
-    margin-bottom: -.5em;
+    padding: 8px;
     background-color: rgb(16, 154, 196);
 }
+header h1 {
+    font-size: 32px;
+    padding-left: 95px;
+}
 section{
-    padding: 1em;
+    padding: 0 15px;
 }
-footer {
-    border-radius: 5px;
-    padding: .2em;
-    text-align: center;
-    background-color:rgb(16, 154, 196);
-    color: white;
-}
-.subheading {
-    border-bottom: 1px solid;
+section h2 {
+    border-bottom: 1px solid black;
 }
 .profilePic {
-    align-content: right;
-    display: block;
     float: right;
+    box-shadow: 0 0 18px black;
     margin: .5em;
 }
-.name {
-    display: inline-block;
-    padding: .65em;
-    padding-left: 4em;
-    border-radius: 5px;
+footer {
+    clear:both;
+    text-align: center;
+}
+footer a, footer a:link, foorer a:visited, footer a:hover, footer a:active, footer a:focus {
     color: white;
 }
-.footnote {
-    margin-bottom: -.5em;
+footer a:hover {
+    color: #DDD;
+}
+.legal {
+    font-size: .9em;
+    margin-bottom: 9px;
 }
 .update {
-    font-size: 12px;
+    font-size: .9em;
     color: yellow;
+    margin-top: 0;
 }
