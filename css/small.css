@@ -7,23 +7,21 @@ body {
 }
 header, footer{
     color: white;
-    border-radius: 5px;
     padding: 8px;
     background-color: rgb(16, 154, 196);
 }
-header h1 {
-    font-size: 32px;
+h1 {
+    font-size: 1.5rem;
     padding-left: 95px;
 }
 section{
     padding: 0 15px;
 }
-section h2 {
+h2 {
+    font-size: 1rem;
     border-bottom: 1px solid black;
 }
 .profilePic {
-    float: right;
-    box-shadow: 0 0 18px black;
     margin: .5em;
 }
 footer {
