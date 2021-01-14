@@ -1,0 +1,59 @@
+* {
+    font-family: 'Signika Negative', sans-serif;
+    background-color: #e9eef2;
+ }
+h2 {
+    color: #12aaeb;
+}
+p {
+    color: #cfc7d2;
+}
+span {
+    color: #cfc7d2;
+}
+#upperCase {
+    text-transform: uppercase;
+ }
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+.personal {
+    background-color: white;
+}
+.business {
+    background-color: white;
+}
+.enterprise {
+    background-color: white;
+}
+section {
+    color: #12aaeb;
+}
+section p{
+    color: #12aaeb;
+}
+
+button {
+    background-color: #d8d8d8;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+button.middle {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
