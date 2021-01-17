@@ -1,4 +1,7 @@
 @media only screen and (min-width: 32.5em) {
+    body {
+        grid-template-columns: 3em 1fr 1fr 3em;
+    }
     h1 {
         font-size: 2rem;
     }
