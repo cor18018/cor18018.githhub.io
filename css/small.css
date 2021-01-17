@@ -28,7 +28,7 @@ footer {
     clear:both;
     text-align: center;
 }
-footer a, footer a:link, foorer a:visited, footer a:hover, footer a:active, footer a:focus {
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
     color: white;
 }
 footer a:hover {

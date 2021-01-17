@@ -1,0 +1,23 @@
+@media only screen and (min-width: 37.5em) {
+
+    body {
+        grid-template-columns: 1fr 1fr;
+    }
+    header{
+        grid-column: span 2;
+    }
+    footer {
+        grid-column: span 2;
+    }
+    .rule_of_thirds {
+        grid-column: 1;
+    }
+    .white_space {
+        grid-column: 2;
+    }
+    .hicks_law {
+        grid-column: span 2;
+    }
+}
+
+
