@@ -8,6 +8,13 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
+            "name": "Open index.html",
+            "file": "lesson3\\index.html"
+        }
+
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
             "name": "Open design_principles.html",
             "file": "lesson_2\\design_principles.html"
         }
