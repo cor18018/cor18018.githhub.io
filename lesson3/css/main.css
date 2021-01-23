@@ -1,4 +1,5 @@
 /*Colors 353535,main: 3c6e71,font: ffffff,d9d9d9, H and F284b63*/
+
 #icon {
     max-width: 100%;
     height: auto;
@@ -37,7 +38,9 @@ nav a, nav a:link, nav a:visited, nav a:hover, nav a:active, nav a:focus  {
     color: #FFFFFF;
 }
 nav a:hover {
-    background-color: #353535;
+    background-color: white;
+    padding: 2px;
+    color: #353535;
 }
 ol li {
     padding: 5px;

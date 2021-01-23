@@ -1,0 +1,31 @@
+@media only screen and (min-width: 37.5em) {
+    main {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 11% 79%;
+    }
+    header h1 {
+        font-size: 40px;
+        margin-top: 3.5%;
+    }
+    nav ul {
+        grid-template-columns: 24% 60% 24%;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    .colors {
+        grid-template-columns: 1fr 40%;
+    }
+    .row1 {
+        font-size: 40px;
+    }
+    .row6 {
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+}
