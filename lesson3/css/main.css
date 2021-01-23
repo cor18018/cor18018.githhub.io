@@ -1,0 +1,35 @@
+/*Colors 353535,3c6e71,ffffff,main: d9d9d9,284b63*/
+#icon {
+    max-width: 60%;
+    height: auto;
+}
+header h1{
+    grid-column: 2;
+    font-size: 30px;
+    text-align: left;
+    margin-top: .3em;
+    padding-right: 10px;
+}
+header, footer {
+  background-color: #284b63;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: .5em;
+}
+nav {
+    display: grid;
+    grid-template-columns: auto;
+}
+main {
+    background-color: #3c6e71;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+section {
+    padding: 1em;
+}
+main a, main a:link, main a:visited, main a:hover, main a:active, main a:focus  {
+    color: #FFFFFF;
+}
