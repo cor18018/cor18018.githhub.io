@@ -29,11 +29,9 @@ nav ul {
 	list-style-type: none;
 	margin: auto;
 	padding: 3px;
-	overflow: hidden;
 }
-nav li {
+nav a{
     text-decoration: none;
-    grid-column: auto;
 }
 nav a, nav a:link, nav a:visited, nav a:hover, nav a:active, nav a:focus  {
     color: #FFFFFF;
@@ -41,20 +39,68 @@ nav a, nav a:link, nav a:visited, nav a:hover, nav a:active, nav a:focus  {
 nav a:hover {
     background-color: #353535;
 }
+ol li {
+    padding: 5px;
+}
 main {
+    font-family: 'Fraunces', serif;
     background-color: #3c6e71;
-    color: #ffffff;
+    color: white;
     display: grid;
     grid-template-columns: 1fr;
 }
 section {
     padding: 1em;
 }
+.colors {
+    display: grid;
+    align-content: center;
+    background-color: #353535;
+}
+.colors p {
+    margin: .5em;
+}
+.row1 {
+    background-color: #284b63;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.row2 {
+    background-color: #284b63;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.row3 {
+    background-color: #3c6e71;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.row4 {
+    background-color: #3c6e71;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.row5 {
+    background-color: #3c6e71;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.row6 {
+    background-color: #284b63;
+    font-size: 11px;
+    padding: 5px;
+    border-radius: 10px;
+}
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus  {
     color: #FFFFFF;
 }
 footer p{
-    font-size: 12px;
+    font-size: 11px;
     margin: auto;
     padding: 2px;
     text-align: center;
