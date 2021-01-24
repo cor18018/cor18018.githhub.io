@@ -7,10 +7,13 @@
         margin: 10%;
     }
     header {
-        grid-template-columns: 10% 79%;
+        grid-template-columns: 7% 85%;
     }
     section {
         margin: 0 10%;
+    }
+    section p {
+        line-height: 1.5;
     }
     .colors {
         grid-template-columns: 50% 25% 25%;
