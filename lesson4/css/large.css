@@ -1,0 +1,28 @@
+@media only screen and (min-width: 60em) {
+    header {
+        grid-template-columns: 4em auto 4em;
+    }
+    header h1 {
+        font-size: 35px;
+        margin: auto;
+    }
+    #icon {
+        margin: 10%;
+    }
+    nav {
+        background-color: #284b63;
+    }
+    #nav {
+        width: 80%;
+        margin: auto;
+    }
+    main {
+        margin: 0 10%;
+    }
+    main p {
+        line-height: 1.5;
+    }
+    footer p{
+        font-size: 16px;
+    }
+}

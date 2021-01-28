@@ -1,33 +1,45 @@
 #icon {
-    max-width: 4em;
+    max-width: 3em;
     height: auto;
+    padding: .5em;
 }
 header, footer {
     background-color: #284b63;
-    padding: .5em;
 }
 header {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 4em auto 4em;
+    margin: 0;
 }
 header h1{
     grid-column: 2;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
-nav {
-    margin: 0 auto;
-    max-width: 360px;
+button {
     grid-column: 3;
+    background-color: #284b63;
+    border: none;
+    color: white;
+    align-items: right;
+    padding: 0;
+}
+button a:link, button a:visited, button a:hover, button a:active button a:focus {
+    background-color: #284b63;
+    color: white;
+    text-decoration: none;
+    padding: 1.25em;
+}
+nav {
+    margin-top: auto;
 }
 #nav {
     list-style: none;
     display: grid;
     grid-template-columns: auto;
-	padding: 0;
-}
-#nav li:first-child {
-    display: block;
+    padding: 0;
+    margin-top: 0;
+    background-color: #284b63;
 }
 #nav li {
     display: none;
@@ -50,21 +62,21 @@ nav {
 #nav.resonsive li {
     display: block;
 }
-h1.resonsive {
-    grid-row: 2;
-}
-main {
+body {
     font-family: 'Fraunces', serif;
     background-color: #3c6e71;
     color: white;
     display: grid;
     grid-template-columns: 1fr;
 }
-section {
+main {
     padding: 1em;
 }
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus  {
     color: #FFFFFF;
+}
+footer {
+    padding: .5em;
 }
 footer p{
     font-size: 11px;
