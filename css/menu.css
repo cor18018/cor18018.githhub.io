@@ -1,0 +1,37 @@
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #12aaeb;
+
+}
+#navigation {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+
+}
+#navigation li:first-child {
+    display: block;
+}
+#navigation li {
+    display: none;
+}
+#navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active #navigation a:focus {
+    display: block;
+    padding: 0.75em;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#navigation a {
+    text-decoration: none;
+}
+#navigation a:hover {
+    color: white;
+    background-color: black;
+}
+#navigation.resonsive li {
+    display: block;
+}
