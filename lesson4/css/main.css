@@ -69,14 +69,50 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
-main {
+.summary {
     padding: 1em;
+}
+h2 {
+    padding-left: .5em;
+    margin: 0;
+    margin-bottom: .5em;
+}
+#hero {
+    max-height: 15%;
+    max-width: 100%;
+}
+.forecast {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    border: solid #353535 2px;
+}
+#forecast {
+    max-width: 10%;
+    padding: 10px;
+}
+.article {
+    padding: 1em;
+}
+#portrait {
+    max-width: 30%;
+    float: right;
+}
+#contact {
+    text-align: left;
+}
+#map {
+    max-width: 50%;
 }
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus  {
     color: #FFFFFF;
 }
 footer {
-    padding: .5em;
+    padding: 1em;
+}
+footer h3 {
+    margin: 0;
+    margin-bottom: .5em;
 }
 footer p{
     font-size: 11px;
