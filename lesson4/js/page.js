@@ -1,6 +1,17 @@
 window.addEventListener("load", ()=>{
-    const lu = document.querySelector("#lastupdated");
-    lu.textContent = document.lastModified;
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"];
+
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    
+    const d = new Date();
+    var today = new Date();
+
+    today = days[d.getDay()] + ", " + String(today.getDate()).padStart(2, "0") + " " + monthNames[d.getMonth()] 
+    + " " + today.getFullYear();
+
+    const lu = document.querySelector("#currentDate");
+    lu.textContent = today;
 
     const cry = document.querySelector("#copyrightyear");
     cry.textContent = new Date().getFullYear();

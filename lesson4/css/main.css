@@ -63,7 +63,7 @@ nav {
     display: block;
 }
 body {
-    font-family: 'Fraunces', serif;
+    font-family: "Fraunces", serif;
     background-color: #3c6e71;
     color: white;
     display: grid;
@@ -87,7 +87,7 @@ h2 {
     text-align: center;
     border: solid #353535 2px;
 }
-#forecast {
+.week img {
     max-width: 10%;
     padding: 10px;
 }
@@ -98,11 +98,21 @@ h2 {
     max-width: 30%;
     float: right;
 }
-#contact {
+.contact p {
     text-align: left;
+    padding: .4em;
+}
+#address {
+    display: none;
+}
+.media {
+    display: none;
 }
 #map {
-    max-width: 50%;
+    max-width: 80%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus  {
     color: #FFFFFF;
@@ -112,11 +122,16 @@ footer {
 }
 footer h3 {
     margin: 0;
-    margin-bottom: .5em;
 }
 footer p{
     font-size: 11px;
     margin: auto;
-    padding: 2px;
     text-align: center;
+}
+.smallDate {
+    display: none;
+}
+.date {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }

@@ -33,26 +33,25 @@
     </nav>
     <main>
         <h2>Preston Idaho</h2>
-        <img id="hero" src="images/place_banner.png" alt="placholder">
-        <div class="summary">
-            <h3>Weather Summary</h3>
-            <p>
-                Aliquip reprehenderit dolor sit magna magna fugiat sit cillum. Irure qui consectetur proident aliquip
-                consectetur et consequat id fugiat sunt Lorem veniam. Id ad Lorem dolore ullamco occaecat cupidatat
-                aliqua reprehenderit minim dolore incididunt eiusmod adipisicing. Aliquip mollit nisi anim voluptate
-                nisi sunt aliquip sunt consectetur tempor quis. Id exercitation cupidatat qui adipisicing laborum tempor
-                amet laboris incididunt excepteur culpa esse consectetur. Laboris ullamco qui sint commodo magna ut ut
-                ad voluptate. Deserunt officia sunt consequat dolor non officia aute id et aute mollit veniam veniam
-                fugiat.
-            </p>
+        <div class="banner">
+            <img id="hero" src="images/place_banner.png" alt="placholder">
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <p>
+                    Aliquip reprehenderit dolor sit magna magna fugiat sit cillum. Irure qui consectetur proident aliquip
+                    consectetur et consequat id fugiat sunt Lorem veniam. 
+                </p>
+            </div>
         </div>
         <div class="forecast">
             <h3>Five Day Forecast</h3>
-            <img id="forecast" src="images/place_icon.png" alt="placholder">
-            <img id="forecast" src="images/place_icon.png" alt="placholder">
-            <img id="forecast" src="images/place_icon.png" alt="placholder">
-            <img id="forecast" src="images/place_icon.png" alt="placholder">
-            <img id="forecast" src="images/place_icon.png" alt="placholder">
+            <div class="week">
+                <img id="forecast1" src="images/place_icon.png" alt="placholder">
+                <img id="forecast2" src="images/place_icon.png" alt="placholder">
+                <img id="forecast3" src="images/place_icon.png" alt="placholder">
+                <img id="forecast4" src="images/place_icon.png" alt="placholder">
+                <img id="forecast5" src="images/place_icon.png" alt="placholder">
+            </div>
         </div>
         <div class="article">
             <h3>Article Title</h3>
@@ -64,19 +63,34 @@
                 nisi sunt aliquip sunt consectetur tempor quis. Id exercitation cupidatat qui adipisicing laborum tempor
                 amet laboris incididunt excepteur culpa esse consectetur. Laboris ullamco qui sint commodo magna ut ut
                 ad voluptate. Deserunt officia sunt consequat dolor non officia aute id et aute mollit veniam veniam
+                fugiat. Aliquip reprehenderit dolor sit magna magna fugiat sit cillum. Irure qui consectetur proident aliquip
+                consectetur et consequat id fugiat sunt Lorem veniam. Id ad Lorem dolore ullamco occaecat cupidatat
+                aliqua reprehenderit minim dolore incididunt eiusmod adipisicing. Aliquip mollit nisi anim voluptate
+                nisi sunt aliquip sunt consectetur tempor quis. Id exercitation cupidatat qui adipisicing laborum tempor
+                amet laboris incididunt excepteur culpa esse consectetur. Laboris ullamco qui sint commodo magna ut ut
+                ad voluptate. Deserunt officia sunt consequat dolor non officia aute id et aute mollit veniam veniam
                 fugiat.
             </p>
         </div>
     </main>
     <footer>
         <div class="contact">
-            <h3>Contact Information</h3>
-            <p id="contact">Email: example@email.com <br>Phone Number: 111-111-1111</p>
+            <div>
+                <h3>Contact Information</h3>
+                <p id="address">1234 Bond Sav Rexburg, ID 83440</p>
+                <p id="email">Email: example@email.com</p>
+                <p id="phone">Phone Number: 111-111-1111</p>
+            </div>
+            <div class="media">
+                <a href="#"><img id="fb" src="images/fb_icon.png" alt="facebook"></a>
+                <a href="#"><img id="insta" src="images/insta_icon.jpg" alt="instagram"></a>
+                <a href="#"><img id="twitter" src="images/twitter_icon.png" alt="twitter"></a>
+            </div>
             <img id="map" src="images/placeholder_map.png" alt="placholder">
         </div>
+        <p class="date"><span id="currentDate"></span></p>
         <p class="legal">&copy; <span id="copyrightyear"></span> | Andrew Cornelius | Idaho |
-            <a href=" https://www.byui.edu/online">BYUI Online Learning</a></p>
-        <p class="update">Current Date: <span id="lastupdated"></span></p>
+            <a href=" https://www.byui.edu/online">BYUI Online Learning</a><span id="currentDate"></span></p>
     </footer>
 </body>
 
