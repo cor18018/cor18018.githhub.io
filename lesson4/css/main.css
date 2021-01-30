@@ -26,14 +26,7 @@ button {
     background-color: #284b63;
     border: none;
     color: white;
-    align-items: right;
     padding: 0;
-}
-button a:link, button a:visited, button a:hover, button a:active button a:focus {
-    background-color: #284b63;
-    color: white;
-    text-decoration: none;
-    padding: 1.25em;
 }
 nav {
     margin-top: auto;
