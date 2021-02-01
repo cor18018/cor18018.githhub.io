@@ -6,6 +6,7 @@
         grid-column: 3;
         font-size: 35px;
         margin: auto;
+        padding-top: .5em;
     }
     #icon {
         margin: 10%;
@@ -33,15 +34,20 @@
     }
     #portrait {
         max-width: 15%;
+        padding-bottom: 1em;
     }
     #map {
         max-width: 40%;
     }
     footer {
+        padding-top: 2em;
         width: 80%;
         margin: auto;
     }
     footer p{
         font-size: 16px;
+    }
+    .legal {
+        padding-top: 1em;
     }
 }

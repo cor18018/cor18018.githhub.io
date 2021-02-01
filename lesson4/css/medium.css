@@ -8,6 +8,10 @@
     header h1 {
         font-size: 30px;
     }
+    .motto p {
+        text-align: center;
+        margin: 0;
+    }
     h2 {
         padding-top: .5em;
     }
@@ -100,6 +104,16 @@
     }
     #address {
         display: block;
+    }
+    #add_icon {
+        height: 20px;
+        padding-right: 5px;
+    }
+    #email_icon {
+        height: 20px;
+    }
+    #phone_icon {
+        height: 13px;
     }
     .media {
         grid-column: 2;

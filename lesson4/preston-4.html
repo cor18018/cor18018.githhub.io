@@ -18,13 +18,16 @@
 <body>
     <header>
         <img id="icon" src="images/road_icon.png" alt="icon">
-        <h1>Weather Roads</h1>
-        <button><a href="#" class="menu">&#9776;</a></button>
+        <div class="motto">
+            <h1>Weather Roads</h1>
+            <p>We check roads</p>
+        </div>
+        <button class="menu">&#9776;</button>
     </header>
     <nav>
         <ul id="nav">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li><a href="#" class="active-page">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -77,20 +80,20 @@
         <div class="contact">
             <div>
                 <h3>Contact Information</h3>
-                <p id="address">1234 Bond Sav Rexburg, ID 83440</p>
-                <p id="email">Email: example@email.com</p>
-                <p id="phone">Phone Number: 111-111-1111</p>
+                <p id="address"><img id=add_icon src="images/pin.png" alt="pin">1234 Bond Sav Rexburg, ID 83440</p>
+                <p id="email"><img id=email_icon src="images/email.png" alt="email">Email: example@email.com</p>
+                <p id="phone"><img id=phone_icon src="images/phone.png" alt="phone">Phone Number: 111-111-1111</p>
             </div>
             <div class="media">
-                <a href="#"><img id="fb" src="images/fb_icon.png" alt="facebook"></a>
-                <a href="#"><img id="insta" src="images/insta_icon.jpg" alt="instagram"></a>
-                <a href="#"><img id="twitter" src="images/twitter_icon.png" alt="twitter"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img id="fb" src="images/fb_icon.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img id="insta" src="images/insta_icon.jpg" alt="instagram"></a>
+                <a href="https://twitter.com/" target="_blank"><img id="twitter" src="images/twitter_icon.png" alt="twitter"></a>
             </div>
             <img id="map" src="images/placeholder_map.png" alt="placholder">
         </div>
-        <p class="date"><span id="currentDate"></span></p>
         <p class="legal">&copy; <span id="copyrightyear"></span> | Andrew Cornelius | Idaho |
-            <a href=" https://www.byui.edu/online">BYUI Online Learning</a><span id="currentDate"></span></p>
+            <a href=" https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="currentDate"></p>
     </footer>
 </body>
 
