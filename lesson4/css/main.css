@@ -29,6 +29,7 @@ button a:link, button a:visited, button a:hover, button a:active button a:focus 
     color: white;
     text-decoration: none;
     padding: 1.25em;
+    cursor:pointer; 
 }
 nav {
     margin-top: auto;
