@@ -1,0 +1,49 @@
+#image {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+}
+#main {
+    width: 100%;
+    padding: 5px;
+}
+
+#left {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+#right {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+}
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    color: white;
+    font-size: 5em;
+}
+#p1 {
+    position: absolute;
+    top: 62%;
+    left: 7%;
+    color: white;
+    font-size: 2em;
+}
+#p2 {
+    position: absolute;
+    top: 67%;
+    left: 7%;
+    color: white;
+    font-size: 2em;
+}
+#profiles {
+    position: absolute;
+    bottom: 12%;
+    left:15%;
+}
+#profiles img{
+    padding: 15px
+}
