@@ -1,49 +1,64 @@
 #image {
     position: relative;
     margin: 0 auto;
-    width: 900px;
+    max-width: 500px;
+    font-family: 'Open Sans', sans-serif;
 }
 #main {
     width: 100%;
     padding: 5px;
+    z-index: -2;
+}
+#gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(2,206,247,1) 100%);
 }
 
 #left {
     position: absolute;
-    top: 70px;
-    left: 30px;
+    top: 45px;
+    left: 40px;
+    width: 30px;
 }
 #right {
     position: absolute;
-    top: 70px;
-    right: 30px;
+    top: 45px;
+    right: 40px;
+    width: 30px;
 }
 h1 {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 7%;
     color: white;
-    font-size: 5em;
+    font-size: 50px;
+    line-height: 50px;
 }
 #p1 {
     position: absolute;
-    top: 62%;
+    top: 60.5%;
     left: 7%;
     color: white;
-    font-size: 2em;
+    font-size: 21px;
 }
 #p2 {
     position: absolute;
-    top: 67%;
+    top: 65%;
     left: 7%;
     color: white;
-    font-size: 2em;
+    font-size: 21px;
+    line-height: 1.5;
 }
 #profiles {
     position: absolute;
-    bottom: 12%;
-    left:15%;
+    bottom: 3%;
+    left:6%;
 }
 #profiles img{
-    padding: 15px
+    padding: 3px;
+    width: 22%;
 }
