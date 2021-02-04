@@ -37,6 +37,12 @@
     main p {
         line-height: 1.3;
     }
+    .alert_message {
+        font-size: 22px;
+    }
+    .alert_message p{
+        line-height: 1.3;
+    }
     .banner {
         position: relative;
     }
