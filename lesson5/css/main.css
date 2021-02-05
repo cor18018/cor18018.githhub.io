@@ -66,6 +66,9 @@ nav {
 #nav.resonsive li {
     display: block;
 }
+.no_alert {
+    display: none;
+}
 .alert_message {
     font-family: 'Londrina Solid', cursive;
     font-size: 18px;
