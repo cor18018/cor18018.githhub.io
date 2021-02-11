@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Preston Town Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preston Home Page">
+    <script src="js/page.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,200&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="icon" src="images/road_icon.png" alt="icon">
+        <div class="motto">
+            <h1>Weather Roads</h1>
+            <p>We check roads</p>
+        </div>
+        <button class="menu">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active-page">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Roads</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <p class="alert_message">Community Message: <br>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at
+            the city pavilion.
+        </p>
+        <div class="banner">
+            <img id="hero" src="images/hero_image2.jpg" alt="placholder">
+            <div class="summary">
+                <h3><u>Weather Summary</u></h3>
+                <p>
+                    Currently: Snowing<br>
+                    High: -30°F<br>
+                    Wind Chill: -36°F<br>
+                    Humidity: 80%<br>
+                    Wind Speed: 15 mph
+                </p>
+            </div>
+        </div>
+        <div class="forecast">
+            <h3>Five Day Forecast</h3>
+            <div class="week">
+                <img id="forecast1" src="images/place_icon.png" alt="placholder">
+                <img id="forecast2" src="images/place_icon.png" alt="placholder">
+                <img id="forecast3" src="images/place_icon.png" alt="placholder">
+                <img id="forecast4" src="images/place_icon.png" alt="placholder">
+                <img id="forecast5" src="images/place_icon.png" alt="placholder">
+            </div>
+        </div>
+        <div class="article">
+            <h3>Article Title</h3>
+            <img id="portrait" src="images/article_pic1.webp" alt="placholder">
+            <p>
+                Aliquip reprehenderit dolor sit magna magna fugiat sit cillum. Irure qui consectetur proident aliquip
+                consectetur et consequat id fugiat sunt Lorem veniam. Id ad Lorem dolore ullamco occaecat cupidatat
+                aliqua reprehenderit minim dolore incididunt eiusmod adipisicing. Aliquip mollit nisi anim voluptate
+                nisi sunt aliquip sunt consectetur tempor quis. Id exercitation cupidatat qui adipisicing laborum tempor
+                amet laboris incididunt excepteur culpa esse consectetur. Laboris ullamco qui sint commodo magna ut ut
+                ad voluptate. Deserunt officia sunt consequat dolor non officia aute id et aute mollit veniam veniam
+                fugiat. Aliquip reprehenderit dolor sit magna magna fugiat sit cillum. Irure qui consectetur proident
+                aliquip
+                consectetur et consequat id fugiat sunt Lorem veniam. Id ad Lorem dolore ullamco occaecat cupidatat
+                aliqua reprehenderit minim dolore incididunt eiusmod adipisicing. Aliquip mollit nisi anim voluptate
+                nisi sunt aliquip sunt consectetur tempor quis. Id exercitation cupidatat qui adipisicing laborum tempor
+                amet laboris incididunt excepteur culpa esse consectetur. Laboris ullamco qui sint commodo magna ut ut
+                ad voluptate. Deserunt officia sunt consequat dolor non officia aute id et aute mollit veniam veniam
+                fugiat.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <div>
+                <h3>Contact Information</h3>
+                <p id="address"><img id=add_icon src="images/pin.png" alt="pin">1234 Bond Sav Rexburg, ID 83440</p>
+                <p id="email"><img id=email_icon src="images/email.png" alt="email">Email: example@email.com</p>
+                <p id="phone"><img id=phone_icon src="images/phone.png" alt="phone">Phone Number: 111-111-1111</p>
+            </div>
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+            </map>
+            <div class="media">
+                <a href="https://www.facebook.com/" target="_blank"><img id="fb" src="images/fb_icon.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img id="insta" src="images/insta_icon.png"
+                        alt="instagram"></a>
+                <a href="https://twitter.com/" target="_blank"><img id="twitter" src="images/twitter_icon.png"
+                        alt="twitter"></a>
+            </div>
+            <div id="map">
+                <div class="gmap_canvas"><iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Peston,%20ID&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
+                        href="https://putlocker-is.org"></a><br>
+                </div>
+            </div>
+        </div>
+        <p class="legal">&copy; <span id="copyrightyear"></span> | Andrew Cornelius | Idaho |
+            <a href=" https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="currentDate"></p>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>WebFont.load({google: {families: ['Bodoni Moda']}}); </script>
+</html>
