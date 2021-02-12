@@ -92,13 +92,16 @@ body {
 .summary {
     padding: 1em;
 }
+.summary p {
+    line-height: .7;
+}
 h2 {
     padding-left: .5em;
     margin: 0;
     margin-bottom: .5em;
 }
-#hero {
-    max-height: 5%;
+#hero img {
+    
     max-width: 100%;
 }
 .forecast {
@@ -116,7 +119,7 @@ h2 {
     padding: 1em;
 }
 #portrait {
-    max-width: 30%;
+    max-width: 40%;
     float: right;
 }
 .contact p {

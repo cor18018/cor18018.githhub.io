@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Preston Home Page">
     <script src="js/page.js"></script>
+    <script src="js/windchill.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -33,7 +34,7 @@
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Roads</a></li>
+            <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
     <main>
@@ -42,16 +43,20 @@
             the city pavilion.
         </p>
         <div class="banner">
-            <img id="hero" src="images/hero_image2.jpg" alt="placholder">
+            <picture id="hero">
+                <source media="(max-width:400px)" srcset="images/wdd230_image_franklin400.jpg">
+                <source media="(max-width:1000px)" srcset="images/wdd230_image_franklin1000.jpg">
+                <source media="(max-width:2000px)" srcset="images/wdd230_image_franklin1600.jpg">
+                <img src="images/wdd230_image_franklinOriginal.jpg" alt="Stary night">
+                <!-- <img id="hero" src="images/hero_image2.jpg" alt="placholder"> -->
+            </picture>
             <div class="summary">
                 <h3><u>Weather Summary</u></h3>
-                <p>
-                    Currently: Snowing<br>
-                    High: -30°F<br>
-                    Wind Chill: -36°F<br>
-                    Humidity: 80%<br>
-                    Wind Speed: 15 mph
-                </p>
+                <p> Currently: Snowing</p>
+                <p> High: <span class="high">50</span>°F</p>
+                <p> Wind Chill: <span class="chill"></span></p>
+                <p> Humidity: 80%</p>
+                <p> Wind Speed: <span class="speed">10</span>mph</p>
             </div>
         </div>
         <div class="forecast">
