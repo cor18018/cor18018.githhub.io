@@ -62,10 +62,7 @@
         border: none;
     }
     .week {
-        display: grid;
-        grid-template-columns: repeat(6,auto);
         border: solid #353535 2px;
-        /*align forecasts to center of grid*/
     }
     .week img {
         max-width: 50%;

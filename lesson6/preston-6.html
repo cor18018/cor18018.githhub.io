@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Sriracha&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,200&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
 </head>
 
 <body>
@@ -62,11 +62,8 @@
         <div class="forecast">
             <h3>Five Day Forecast</h3>
             <div class="week">
-                <img id="forecast1" src="images/place_icon.png" alt="placholder">
-                <img id="forecast2" src="images/place_icon.png" alt="placholder">
-                <img id="forecast3" src="images/place_icon.png" alt="placholder">
-                <img id="forecast4" src="images/place_icon.png" alt="placholder">
-                <img id="forecast5" src="images/place_icon.png" alt="placholder">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/42d10n111d88/preston/" data-label_1="PRESTON"
+                    data-font="Georgia" data-days="5" data-theme="pure">PRESTON</a>
             </div>
         </div>
         <div class="article">
@@ -113,7 +110,6 @@
             </div>
             <div id="map">
                 <div class="gmap_canvas"><iframe id="gmap_canvas"
-                           
                         src="https://maps.google.com/maps?q=Peston,%20ID&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
                         href="https://putlocker-is.org"></a><br>
                 </div>
@@ -125,5 +121,12 @@
     </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>WebFont.load({google: {families: ['Bodoni Moda']}}); </script>
+<script>
+    WebFont.load({
+        google: {
+            families: ['Bodoni Moda']
+        }
+    });
+</script>
+
 </html>
