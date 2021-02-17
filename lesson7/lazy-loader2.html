@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/page.js"></script>
     <title>Lazy Loader Example</title>
     <style>
         img {
@@ -17,40 +19,7 @@
             margin-bottom:500px;
         }
     </style>
-    <script>
-        window.addEventListener("load", (event) => {
-            const images = document.querySelectorAll("[data-src]");
-            //console.log(images);
-            function preloadImage(img){
-                console.log("trying to load " + img);
-                const src= img.getAttribute("data-src");
-                if(!src){
-                    return;
-                }
-                img.src= src;
-            }
-            const imgOptions = {
-                threshold:0,
-                rootMargin: "0px 0px 300px 0px"
-            }
-            const imgObserver = new IntersectionObserver( (entries,imgObserver)=>{
-                console.log(entries)
-                entries.forEach(entry=>{
-                    if(!entry.isIntersecting){
-                        return;
-                    }
-                    else {
-                        preloadImage(entry.target);
-                        imgObserver.unobserve(entry.target);
-                    }
-                })
-            }, imgOptions);
-            images.forEach(image=>{
-                imgObserver.observe(image);
-            })
-        });
 
-    </script>
 </head>
 
 <body>
