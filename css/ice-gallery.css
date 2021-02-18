@@ -1,0 +1,72 @@
+.place-holder {
+background-color: gray;
+
+}
+
+.gallery {
+display: grid;
+grid-template-areas: "one"
+                     "one"
+                     "two"
+                     "thr"
+                     "fou"
+                     "fiv"
+                     "six"
+                     "six"
+                     "sev"
+                     "eig"
+                     "nin"
+                     "ten";
+grid-gap: 5px;
+}
+
+img {
+-webkit-filter: grayscale(1);
+background-color: gray;
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+}
+
+img:hover {
+-webkit-filter: grayscale(0);
+filter: none;
+}
+
+
+.place-holder1 { grid-area: one; }
+.place-holder2 { grid-area: two; }
+.place-holder3 { grid-area: thr; }
+.place-holder4 { grid-area: fou; }
+.place-holder5 { grid-area: fiv; }
+.place-holder6 { grid-area: six; }
+.place-holder7 { grid-area: sev; }
+.place-holder8 { grid-area: eig; }
+.place-holder9 { grid-area: nin; }
+.place-holder0 { grid-area: ten; }
+
+@media only screen and (min-width: 32.5em) {
+    .gallery {
+        grid-template-areas: "one two"
+                             "one fou"
+                             "fiv thr"
+                             "fiv two"
+                             "six six"
+                             "six six"
+                             "sev eig"
+                             "nin nin"
+                             "nin nin";
+        
+        }
+}
+@media only screen and (min-width: 60em) {
+    .gallery {
+        grid-template-areas: "one two thr"
+                             "one fou fiv"
+                             "six six fiv"
+                             "six six sev"
+                             "eig nin nin"
+                             "ten nin nin";
+        }
+}
