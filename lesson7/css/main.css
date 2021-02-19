@@ -1,8 +1,11 @@
 .loading {
     background-color: lightgray;
-    min-width: 400px;
+    min-width: 300px;
     min-height: 400px;
     position: relative;
+    filter: blur(0.5em);
+    -webkit-filter: blur(0.5em);
+    transition: filter 0.5s;
 }
 
 .placeholder-loading::before {
@@ -23,12 +26,11 @@
     position: relative;
     overflow: hidden;
 }
-img {
-    border:5px solid red;
-    width: 400px;
-    height:400px;
-    background-color:lightgray;
+.placeholder-loading img[data-src] {
+    filter: blur(0em);
+    -webkit-filter: blur(0em);
 }
+
 body {
     margin-bottom:500px;
 }
