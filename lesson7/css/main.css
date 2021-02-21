@@ -109,7 +109,6 @@ h2 {
 .card img[src="images/placeholder.jpg"] {
     height: 300px;
     filter: blur(0.5em);
-    -webkit-filter: blur(0.5em);
 }
 .one {
     grid-area: 1;
