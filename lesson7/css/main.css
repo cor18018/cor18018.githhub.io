@@ -105,9 +105,6 @@ h2 {
 }
 .card img {
     max-width: 100%;
-    background-color: lightgray;
-    min-width: 300px;
-    min-height: 200px
 }
 .card img[src="images/placeholder.jpg"] {
     height: 300px;
