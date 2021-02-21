@@ -93,9 +93,11 @@ h2 {
 .card {
     margin: 0 auto;
     max-width: 100%;
+    max-height: 100%;
     color:#353535;
     margin-bottom: 1em;
 }
+
 .card p {
     background-color:#FFFFFF;
     margin: 0 auto;
@@ -103,6 +105,15 @@ h2 {
 }
 .card img {
     max-width: 100%;
+}
+.card img[src]{
+    max-width: 100%;
+    max-height: 100%;
+}
+.card img[src="images/placeholder.jpg"] {
+    filter: blur(0.5em);
+    -webkit-filter: blur(0.5em);
+    height: 300px;
 }
 .one {
     grid-area: 1;

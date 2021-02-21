@@ -1,6 +1,5 @@
 window.addEventListener("load", (event) => {
     const images = document.querySelectorAll("[data-src]");
-    //console.log(images);
     function preloadImage(img){
         console.log("trying to load " + img);
         const src= img.getAttribute("data-src");

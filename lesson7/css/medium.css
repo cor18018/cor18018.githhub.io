@@ -46,11 +46,9 @@
     .card {
         margin: 1em
     }
-    .card p {
-        
-    }
-    .card img {
-
+    .card img[data-src]{
+        width: 100%;
+        max-height: 100%;
     }
     .contact {
         display: grid;
