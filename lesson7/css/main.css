@@ -106,10 +106,6 @@ h2 {
 .card img {
     max-width: 100%;
 }
-.card img[src]{
-    max-width: 100%;
-    max-height: 100%;
-}
 .card img[src="images/placeholder.jpg"] {
     filter: blur(0.5em);
     height: 300px;
