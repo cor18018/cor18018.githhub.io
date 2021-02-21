@@ -74,15 +74,15 @@ body {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    grid-area: "1"
-               "2"
-               "3"
-               "4"
-               "5"
-               "6"
-               "7"
-               "8"
-               "9";
+    grid-template-areas: "1"
+                         "2"
+                         "3"
+                         "4"
+                         "5"
+                         "6"
+                         "7"
+                         "8"
+                         "9";
     
 }
 h2 {
@@ -112,7 +112,6 @@ h2 {
 }
 .card img[src="images/placeholder.jpg"] {
     filter: blur(0.5em);
-    -webkit-filter: blur(0.5em);
     height: 300px;
 }
 .one {
