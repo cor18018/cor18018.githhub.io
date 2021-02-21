@@ -105,10 +105,13 @@ h2 {
 }
 .card img {
     max-width: 100%;
+    background-color: lightgray;
+    min-width: 300px;
+    min-height: 200px
 }
 .card img[src="images/placeholder.jpg"] {
-    filter: blur(0.5em);
     height: 300px;
+    filter: blur(0.5em);
 }
 .one {
     grid-area: 1;
