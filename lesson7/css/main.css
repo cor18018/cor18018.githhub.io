@@ -106,7 +106,7 @@ h2 {
 .card img {
     max-width: 100%;
 }
-.card img[src="images/placeholder.jpg"] {
+.card img[src="images/placeholder1.jpg"] {
     height: 300px;
     filter: blur(0.5em);
 }
