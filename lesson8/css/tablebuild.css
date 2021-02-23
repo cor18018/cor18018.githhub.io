@@ -38,3 +38,6 @@ tfoot {
     color:white;
     background-color: #628ca6;
 }
+span {
+    font-style: italic;
+}
