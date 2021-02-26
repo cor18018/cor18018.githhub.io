@@ -1,4 +1,7 @@
 window.addEventListener("load", (event) => {
+    const numberRange = document.querySelector('#range');
+    numberRange.addEventListener('input', () => { document.getElementById('rangeValue').innerHTML = range.value; });
+    
     const monthNames = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
     ];
