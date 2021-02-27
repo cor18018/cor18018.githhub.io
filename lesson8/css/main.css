@@ -134,7 +134,7 @@ form input.submitBtn {
     max-width: 20em;
 }
 form label.top input:required {
-    border-left: red solid 6px;
+    border-left: #9c2c13 solid 6px;
 }
 form label.top input:required:valid {
     border-left: green solid 6px;
