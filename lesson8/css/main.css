@@ -74,47 +74,62 @@ body {
 }
 /*-----Main-------*/
 form fieldset {
-    margin: 2em 0;
+    margin: 2em .5em;
     border: 1px solid #353535;
     border-radius: 10px;
     padding: .5em 2%;
 }
 form legend {
-    color: #d9d9d9;
-    margin: 0 1em;
+    color: white;
+    margin: 0;
     padding: 0 .5em;
+    font-size: 20px;
 }
 form label.top, form div {
     display: block;
     padding-top: 1em;
+    color: white;
+    font-size: 16px;
+}
+form label.top ::placeholder {
     color: #d9d9d9;
-    font-size: .8em;
 }
 form label.top input, form label.top select {
-    -webkit-appearance: none;
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     border: solid 1px #353535;
     border-radius: 4px;
     padding: .75em;
-    color: #d9d9d9;
+    margin-top: .25em;
+    color: white;
     width: 80%;
     max-width: 20em;
     background-color: rgba(0,0,0,0.1);
+}
+form label input[type="range"] {
+    padding:0;
+    margin: .5em
 }
 form label.side {
     display: block;
     padding: .5em;
     color: #d9d9d9;
-
+    font-size: 14px;
+}
+form label select option{
+    color: #353535;
+}
+form label textarea {
+    margin-top: .5em;
+    font-size: 14px;
 }
 form input.submitBtn {
     border:none;
     background-color: #9c2c13;
-    color: #d9d9d9;
+    color: white;
     border-radius: 1em;
     padding: .75em 1.5em;
-    margin: 0 0 2em 2%;
+    margin: .5em auto;
     width: 96%;
     max-width: 20em;
 }

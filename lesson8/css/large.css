@@ -25,6 +25,10 @@
         width: 80%;
         margin: 0 auto;
     }
+    form {
+        width: 750px;
+        margin: 0 auto;
+    }
     
     /*-----Footer-----*/
     #map {

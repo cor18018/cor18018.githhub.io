@@ -37,19 +37,22 @@
         </ul>
     </nav>
     <main>
-        
+
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Contact Information</legend>
                 <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z]{5,}" required>
-                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label class="top">Phone Number<input type="tel" name="phone" placeholder="1234551234" required></label>
-                <label class="top">Zip Code<input type="number" name="zip_code" required></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone Number<input type="tel" name="phone" placeholder="1234551234"
+                            required></label>
+                    <label class="top">Zip Code<input type="number" name="zip_code" required></label>
             </fieldset>
 
             <fieldset>
                 <legend>Storm Event</legend>
+
                 <label class="top">Date of Storm Event<input type="date" name="storm_date"></label>
+
                 <label class="top">Type of Storm
                     <input list="storms" name="storm_types">
                     <datalist id="storms">
@@ -60,28 +63,36 @@
                         <option value="Tornado">
                     </datalist>
                 </label>
+
                 <label class="top">Storm Severity
                     <input type="range" name="storm_severity" min="1" max="10" value="5" id="range">
-                    <span id="rangeValue"></span>
+                    <span id="rangeValue">5</span>
                 </label>
-                <label class="top">Region that Storm affected 
+
+                <label class="top">Region that Storm affected
                     <select name="region">
-                    <option value="">Select Region&#9662;</option>
-                    <option value="preston">Preston</option>
-                    <option value="soda_springs">Soda Springs</option>
-                    <option value="fishHaven">Fish Haven</option>
+                        <option value="">Select Region&#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda_springs">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
                     </select>
                 </label>
+
                 <div>Are you in danger?</div>
-                <label class="side"><input type="radio" name="dange" value="yes"> Yes</label>
-                <label class="side"><input type="radio" name="dange" value="maybe"> Maybe</label>
+                <label class="side"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="side"><input type="radio" name="danger" value="maybe"> Maybe</label>
                 <label class="side"><input type="radio" name="danger" value="no"> No</label>
             </fieldset>
-            <label class="top">Additional Information<textarea name="add_info" max="500"></textarea></label>
 
-            <input type="submit" value="Report Storm Event" class="submitBtn">
+            <fieldset>
+                <label class="top">
+                    <div>Additional Information</div>
+                    <textarea name="add_info" rows="8"
+                        cols="38"></textarea></label>
+                <input type="submit" value="Report Storm Event" class="submitBtn">
+            </fieldset>
         </form>
-        
+
     </main>
     <footer>
         <div class="contact">
