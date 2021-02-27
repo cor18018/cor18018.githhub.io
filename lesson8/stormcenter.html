@@ -41,7 +41,7 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Contact Information</legend>
-                <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z]{5,}" required>
+                <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
                     <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
                     <label class="top">Phone Number<input type="tel" name="phone" placeholder="1234551234"
                             required></label>
@@ -64,7 +64,7 @@
                     </datalist>
                 </label>
 
-                <label class="top">Storm Severity
+                <label class="top">Storm Severity : 
                     <input type="range" name="storm_severity" min="1" max="10" value="5" id="range">
                     <span id="rangeValue">5</span>
                 </label>
@@ -85,8 +85,8 @@
             </fieldset>
 
             <fieldset>
+                <div>Additional Information</div>
                 <label class="top">
-                    <div>Additional Information</div>
                     <textarea name="add_info" rows="8"
                         cols="38"></textarea></label>
                 <input type="submit" value="Report Storm Event" class="submitBtn">

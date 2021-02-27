@@ -37,6 +37,11 @@
     }
     /*-----Main-----*/
 
+    div.thanks p {
+       font-size: 20px;
+       padding-top: 4em;
+    }
+
     /*-----Footer-----*/
     .contact {
         display: grid;

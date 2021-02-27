@@ -73,6 +73,19 @@ body {
     color: white;
 }
 /*-----Main-------*/
+
+div.thanks {
+    text-align: center;
+    margin: 0 auto;
+    height: 200px;
+    max-width: 500px;
+    background-color: #353535;
+}
+div.thanks p {
+    margin: 0 auto;
+    max-width: 375px;
+    padding-top: 5em;
+}
 form fieldset {
     margin: 2em .5em;
     border: 1px solid #353535;
@@ -106,9 +119,18 @@ form label.top input, form label.top select {
     max-width: 20em;
     background-color: rgba(0,0,0,0.1);
 }
+form label.top {
+    position: relative;
+}
 form label input[type="range"] {
     padding:0;
-    margin: .5em
+    max-width: 190px;
+    margin-top: .5em;
+}
+form label span {
+    position: absolute;
+    left: 13em;
+    top: 2.5em;
 }
 form label.side {
     display: block;
@@ -120,7 +142,6 @@ form label select option{
     color: #353535;
 }
 form label textarea {
-    margin-top: .5em;
     font-size: 14px;
 }
 form input.submitBtn {
