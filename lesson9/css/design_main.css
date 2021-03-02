@@ -1,0 +1,76 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+.games {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    border-collapse: collapse; /*no spaces between table lines?*/
+    font-size: 14px;
+    color: #4a4a4a;
+    margin: 0 auto; /*center*/
+    margin-top: 2em;
+    margin-bottom: 3em;
+    border: 1px solid black;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    overflow: hidden; /*background color dissapears - works with text too*/
+}
+.team {
+    max-width: 500px;
+    width: 100%;
+    border-collapse: collapse; /*no spaces between table lines?*/
+    font-size: 14px;
+    color: #4a4a4a;
+    margin: 0 auto; /*center*/
+    border: 1px solid black;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    overflow: hidden; /*background color dissapears - works with text too*/
+}
+.logo {
+    position: absolute;
+    left: 41%;
+    opacity: 50%;
+}
+table tr:hover {
+    background-color: #7fb9c2; 
+    color: black ;
+}
+tr {
+text-align: left;
+text-transform: uppercase;
+color: #5b666e;
+font-size: 0.9em;
+letter-spacing: 1px;
+}
+
+.games tbody tr:nth-child(odd){ /*or 2n+1*/
+    background: rgba(150, 214, 0, 0.313);
+}
+
+.games thead tr:nth-child(1) {
+    background: rgba(0, 77, 113, 0.299);
+    text-align: center;
+}
+
+.games thead tr:nth-child(2) {
+    background: rgba(0, 77, 113, 0.061);
+}
+
+.team tr:nth-child(odd) {
+    background: rgba(100, 140, 26, 0.353);
+}
+
+.team tbody tr:nth-child(1) {
+    background: white;
+}
+
+.team thead tr:nth-child(1) {
+    background: rgba(0, 77, 113, 0.299);
+    text-align: center;
+}
+
+.games, .team {
+    box-shadow: 0 0 8px grey;
+}
