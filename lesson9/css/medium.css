@@ -1,0 +1,83 @@
+@media only screen and (min-width: 37.5em) {
+    /*-----Nav-----*/
+    header {
+        grid-template-columns: 2em 92%;
+    }
+    #icon {
+        max-width: 4em;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    .motto p {
+        text-align: center;
+        margin: 0;
+        font-size: 20px;
+    }
+    h2 {
+        padding-top: .5em;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    nav {
+        max-width: 100%;
+    }
+    #nav {
+        grid-template-columns: repeat(7,auto);
+    }
+    #nav li {
+        display: block;
+    }
+    #nav a:link, #nav a:visited, #nav a:hover, #nav a:active #nav a:focus {
+        text-align: center;
+    }
+    button {
+        display: none;
+    }
+    /*-----Main-----*/
+
+    
+
+    /*-----Footer-----*/
+    .contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .contact h3 {
+        grid-column: 2;
+    }
+    #contact {
+        grid-column: 2;
+        margin: 0;
+    }
+    #address {
+        display: block;
+    }
+    #add_icon {
+        height: 20px;
+        padding-right: 5px;
+    }
+    #email_icon {
+        height: 20px;
+    }
+    #phone_icon {
+        height: 13px;
+    }
+    .media {
+        grid-column: 2;
+        display: block;
+    }
+    .media img{
+        width: 5%;
+        padding: .5em;
+    }
+    #map {
+        max-width: 50%;
+        grid-column: 1;
+        grid-row: 1/4;
+    }
+    footer p{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,45 @@
+@media only screen and (min-width: 60em) {
+    /*-----Nav-----*/
+    header {
+        grid-template-columns: 10% 8% 60%;
+    }
+    header h1 {
+        grid-column: 3;
+        font-size: 35px;
+        margin: auto;
+        padding-top: .5em;
+    }
+    #icon {
+        margin: 10%;
+        grid-column: 2;
+    }
+    nav {
+        background-color: #284b63;
+    }
+    #nav {
+        width: 80%;
+        margin: auto;
+    }
+    /*-----Main-----*/
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    
+    /*-----Footer-----*/
+    #map {
+        max-width: 40%;
+    }
+    footer {
+        padding-top: 2em;
+        width: 80%;
+        margin: auto;
+    }
+    footer p{
+        font-size: 16px;
+    }
+    .legal {
+        padding-top: 1em;
+    }
+}
