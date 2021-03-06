@@ -36,80 +36,39 @@ window.addEventListener("load", (event) => {
     .then(function (jsonObject) {
         const towns = jsonObject['towns'];
         console.table(jsonObject);
-    
-        let town1 = document.createElement('section');
-        let h2t1 = document.createElement('h2');
-        let h3t1 = document.createElement('h3');
-        let foundedt1 = document.createElement('p');
-        let popt1 = document.createElement('p');
-        let raint1 = document.createElement('p');
-        let imaget1 = document.createElement('img');
-
-        h2t1.textContent = towns[5].name;
-        h3t1.textContent = towns[5].motto;
-        imaget1.setAttribute('src', towns[5].photo);
-        imaget1.setAttribute('alt', towns[5].name);
-        foundedt1.textContent = 'Year Founded: ' + towns[5].yearFounded;
-        popt1.textContent = 'Population: ' + towns[5].currentPopulation;
-        raint1.textContent = 'Annual Rain Fall: ' + towns[5].averageRainfall;
-
-        town1.appendChild(h2t1);
-        town1.appendChild(h3t1);
-        town1.appendChild(imaget1);
-        town1.appendChild(foundedt1);
-        town1.appendChild(popt1);
-        town1.appendChild(raint1);
-
-        let town2 = document.createElement('section');
-        let h2t2 = document.createElement('h2');
-        let h3t2 = document.createElement('h3');
-        let foundedt2 = document.createElement('p');
-        let popt2 = document.createElement('p');
-        let raint2 = document.createElement('p');
-        let imaget2 = document.createElement('img');
-
-        h2t2.textContent = towns[6].name;
-        h3t2.textContent = towns[6].motto;
-        imaget2.setAttribute('src', towns[6].photo);
-        imaget2.setAttribute('alt', towns[6].name);
-        foundedt2.textContent = 'Year Founded: ' + towns[6].yearFounded;
-        popt2.textContent = 'Population: ' + towns[6].currentPopulation;
-        raint2.textContent = 'Annual Rain Fall: ' + towns[6].averageRainfall;
-
-        town2.appendChild(h2t2);
-        town2.appendChild(h3t2);
-        town2.appendChild(imaget2);
-        town2.appendChild(foundedt2);
-        town2.appendChild(popt2);
-        town2.appendChild(raint2);
-
-        let town3 = document.createElement('section');
-        let h2t3 = document.createElement('h2');
-        let h3t3 = document.createElement('h3');
-        let foundedt3 = document.createElement('p');
-        let popt3 = document.createElement('p');
-        let raint3 = document.createElement('p');
-        let imaget3 = document.createElement('img');
-
-        h2t3.textContent = towns[1].name;
-        h3t3.textContent = towns[1].motto;
-        imaget3.setAttribute('src', towns[1].photo);
-        imaget3.setAttribute('alt', towns[1].name);
-        foundedt3.textContent = 'Year Founded: ' + towns[1].yearFounded;
-        popt3.textContent = 'Population: ' + towns[1].currentPopulation;
-        raint3.textContent = 'Annual Rain Fall: ' + towns[1].averageRainfall;
         
+        for (let i = 0; i < towns.length; i++ ) {
 
-        town3.appendChild(h2t3);
-        town3.appendChild(h3t3);
-        town3.appendChild(imaget3);
-        town3.appendChild(foundedt3);
-        town3.appendChild(popt3);
-        town3.appendChild(raint3);
+            if ((towns[i].name === 'Preston') || (towns[i].name === 'Soda Springs')
+            ||(towns[i].name === 'Fish Haven')) {
 
-        document.querySelector('div.towns').appendChild(town1);  
-        document.querySelector('div.towns').appendChild(town2);        
-        document.querySelector('div.towns').appendChild(town3);  
+                let town = document.createElement('section');
+                let h2 = document.createElement('h2');
+                let h3 = document.createElement('h3');
+                let founded = document.createElement('p');
+                let pop = document.createElement('p');
+                let rain = document.createElement('p');
+                let image = document.createElement('img');
+
+                h2.textContent = towns[i].name;
+                h3.textContent = towns[i].motto;
+                image.setAttribute('src', 'images/' + towns[i].photo);
+                image.setAttribute('alt', towns[i].name);
+                founded.textContent = 'Year Founded: ' + towns[i].yearFounded;
+                pop.textContent = 'Population: ' + towns[i].currentPopulation;
+                rain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+
+                town.appendChild(h2);
+                town.appendChild(h3);
+                town.appendChild(image);
+                town.appendChild(founded);
+                town.appendChild(pop);
+                town.appendChild(rain);
+
+                document.querySelector('div.towns').appendChild(town);  
+
+        }}
+
     });
 
 });
