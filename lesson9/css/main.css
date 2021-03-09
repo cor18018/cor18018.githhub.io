@@ -74,7 +74,29 @@ body {
 }
 /*-----Main-------*/
 
-
+section {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color:#284b63;
+    margin-bottom: 1em;
+}
+section img {
+    width: 100%;
+}
+section h2 {
+    font-size: 36px;
+    padding-top: .4em;;
+    margin:0;
+}
+section h3 {
+    color:#d9d9d9;
+    margin: .5em 0;
+}
+section p {
+    margin: 0;
+    padding-bottom: .5em;
+}
 
 /*-----Footer-----*/
 .contact p {

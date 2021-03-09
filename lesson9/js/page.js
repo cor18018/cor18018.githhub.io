@@ -45,6 +45,7 @@ window.addEventListener("load", (event) => {
                 let town = document.createElement('section');
                 let h2 = document.createElement('h2');
                 let h3 = document.createElement('h3');
+                let info = document.createElement('div');
                 let founded = document.createElement('p');
                 let pop = document.createElement('p');
                 let rain = document.createElement('p');
@@ -56,14 +57,15 @@ window.addEventListener("load", (event) => {
                 image.setAttribute('alt', towns[i].name);
                 founded.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 pop.textContent = 'Population: ' + towns[i].currentPopulation;
-                rain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+                rain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + '%';
 
                 town.appendChild(h2);
                 town.appendChild(h3);
                 town.appendChild(image);
-                town.appendChild(founded);
-                town.appendChild(pop);
-                town.appendChild(rain);
+                town.appendChild(info);
+                info.appendChild(founded);
+                info.appendChild(pop);
+                info.appendChild(rain);
 
                 document.querySelector('div.towns').appendChild(town);  
 

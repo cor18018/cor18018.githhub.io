@@ -25,7 +25,24 @@
         width: 80%;
         margin: 0 auto;
     }
-    
+    .towns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+        padding: 1em;
+    }
+    section {
+        display: block;
+        margin:0;
+    }
+    section h3 {
+        font-size: 18px;
+        padding: .3em;
+    }
+    section h2 {
+        padding: 0;
+        padding-top: .5em;
+    }
     
     /*-----Footer-----*/
     #map {
