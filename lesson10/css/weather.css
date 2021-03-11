@@ -1,0 +1,52 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+
+
+img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+#sunny{
+    font-size: 36px;
+    text-align: center;
+}
+
+.current {
+    position: absolute;
+    /* background-color: rgba(94,222,238, 1); */
+    border-radius: 10px;
+    padding: 15px;
+    left: 6.5em;
+    top: 2em;
+    color: white;
+    line-height: 1.3;
+    text-align: center;
+}
+
+
+section h2 {
+    font-size: 3.2em;
+    font-weight: 500;
+}
+
+.day {
+    position: absolute;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.3em;
+    padding: 15px;
+    background-color: rgba(58, 112, 218, 0.6);
+    color: white;
+    bottom: 15em;
+}
+
+#friday, #saturday, #sunday, #monday, #tuesday {
+    font-size: 1.6em;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+    <title>Ice Weather</title>
+    <!--Creators: Andrew Cornelius, Manahari Dahal, Eddy Gonzalez-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <img class="weather" src="images/rexburg_day.jpg" alt="background">
+        <div class="current">
+            <i class="wi wi-day-sunny" id="sunny"></i>
+            <section>
+                <p id="status"></p>
+                <h2><span id="current-temp"></span>&deg;</h2>
+                <p id="today"></p>
+            </section>
+        </div>
+        <div class="day">
+            <p id="fri"> 
+                Fri 
+                <br>
+                <span id="friday"></span>
+            </p>
+
+            <p id="sat"> 
+                Sat
+                <br>
+                <span id="saturday"></span>
+            </p>
+
+            <p id="sun"> 
+                Sun
+                <br>
+                <span id="sunday"></span>
+            </p>
+
+            <p id="mon"> 
+                Mon
+                <br>
+                <span id="monday"></span>
+            </p>
+
+            <p id="tue"> 
+                Tue
+                <br>
+                <span id="tuesday"></span>
+            </p>
+        </div>
+    </main>
+
+    <script src="js/weatherapi.js"></script>
+</body>
+</html>
