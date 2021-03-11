@@ -14,11 +14,6 @@ fetch(apiURL)
     document.getElementById('current-temp').textContent = Math.round(jsObject.main.temp);
     document.getElementById('today').textContent = today;
     document.getElementById('status').textContent = jsObject.weather[0].main;   
-
-
-
-    // let five_days = document.getElementById('day');
-    // five_days = document.createElement('p');
   });
 
   const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial'
