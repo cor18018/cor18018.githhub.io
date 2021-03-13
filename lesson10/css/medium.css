@@ -61,11 +61,23 @@
         text-align: left;
         border: none;
     }
+    h3 {
+        font-size: 22px;
+    }
     .week {
         border: solid #353535 2px;
     }
+    .week h3 {
+        margin: 0;
+        margin-top: .5em;
+    }
     .week img {
-        max-width: 50%;
+        width: 100px;
+    }
+    .week p {
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: .5em;
     }
     #forecast1 {
         grid-row: 1;

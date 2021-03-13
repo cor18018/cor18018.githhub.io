@@ -101,7 +101,6 @@ h2 {
     margin-bottom: .5em;
 }
 #hero img {
-    
     max-width: 100%;
 }
 .forecast {
@@ -110,6 +109,21 @@ h2 {
     text-align: center;
     border: solid #353535 2px;
 }
+
+.week {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.week div {
+    text-align: center;
+    border: solid #353535 1px;
+}
+.week img {
+    width: 50px;
+    filter: invert(100%);
+    filter: brightness(3);
+}
+
 .article {
     padding: 1em;
 }
@@ -162,6 +176,9 @@ footer h3 {
     padding-top: .4em;
 }
 #currentDate {
+    padding-top: .4em;
+}
+#api {
     padding-top: .4em;
 }
 footer p{

@@ -42,10 +42,18 @@ window.addEventListener("load", () => {
     .then((jsObject) => {
         console.log(jsObject);
 
-        document.getElementById('current').textContent = Math.round(jsObject.main.temp);
-        document.getElementById('high').textContent = Math.round(jsObject.main.temp_max);
-        document.getElementById('chill').textContent = Math.round(jsObject.main.feels_like);  
-        document.getElementById('humidity').textContent = Math.round(jsObject.main.feels_like);  
+        document.getElementById('current').innerHTML = Math.round(jsObject.main.temp) + " °F";
+        document.getElementById('high').innerHTML = Math.round(jsObject.main.temp_max) + " °F";
+        
+        if (jsObject.main.temp_max <= 50 || jsObject.wind.speed >= 3) {
+            document.getElementById('chill').innerHTML = Math.round(jsObject.main.feels_like) + " °F";  
+        }
+        else {
+            chill.textContent = "N/A"
+        }        
+        
+        document.getElementById('humidity').innerHTML = jsObject.main.humidity + "%";  
+        document.getElementById('speed').innerHTML = jsObject.wind.speed + " mph";  
     });
 
     const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial'
@@ -53,12 +61,40 @@ window.addEventListener("load", () => {
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
+        
+        for (var i = 0; jsObject.list.length; i++) {
 
-        document.getElementById('friday').innerHTML = Math.round(jsObject.list[7].main.temp) + "&deg;";
-        document.getElementById('saturday').innerHTML = Math.round(jsObject.list[15].main.temp) + "&deg;";
-        document.getElementById('sunday').innerHTML = Math.round(jsObject.list[23].main.temp) + "&deg;";
-        document.getElementById('monday').innerHTML = Math.round(jsObject.list[31].main.temp) + "&deg;";
-        document.getElementById('tuesday').innerHTML = Math.round(jsObject.list[39].main.temp) + "&deg;";
+            let time = jsObject.list[i].dt_txt;
+            time_of_day = time.substr(time.indexOf(' ')+1);
+            date = time.substr(0,time.indexOf(' '))
+            short = new Date(date).toLocaleString('en-us', {weekday:'short'});
+
+            if (time_of_day == "18:00:00") {
+            let card = document.createElement('div');
+            let day = document.createElement('h3');
+            let weather_icon = document.createElement('img')
+            let temp = document.createElement('p');
+
+            day.textContent = short;
+            temp.textContent = Math.round(jsObject.list[i].main.temp) + " °F"
+            weather_icon.setAttribute('src', "http://openweathermap.org/img/wn/" + jsObject.list[i].weather[0].icon + "@2x.png");
+            weather_icon.setAttribute('alt', jsObject.list[i].weather[0].main);
+
+
+            card.appendChild(day);
+            card.appendChild(weather_icon);
+            card.appendChild(temp);
+
+            document.querySelector('div.week').appendChild(card);
+            }
+        }
+        
+
+        // document.getElementById('friday').innerHTML = Math.round(jsObject.list[7].main.temp) + "&deg;";
+        // document.getElementById('saturday').innerHTML = Math.round(jsObject.list[15].main.temp) + "&deg;";
+        // document.getElementById('sunday').innerHTML = Math.round(jsObject.list[23].main.temp) + "&deg;";
+        // document.getElementById('monday').innerHTML = Math.round(jsObject.list[31].main.temp) + "&deg;";
+        // document.getElementById('tuesday').innerHTML = Math.round(jsObject.list[39].main.temp) + "&deg;";
 
     });
 
