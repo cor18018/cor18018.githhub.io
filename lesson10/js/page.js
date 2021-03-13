@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
     
 
 
-    const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5605242&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial';
+    const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial';
     fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -56,7 +56,7 @@ window.addEventListener("load", () => {
         document.getElementById('speed').innerHTML = jsObject.wind.speed + " mph";  
     });
 
-    const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial'
+    const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial'
     fetch(apiURL2)
     .then((response) => response.json())
     .then((jsObject) => {
