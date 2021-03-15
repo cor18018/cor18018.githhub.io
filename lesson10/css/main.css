@@ -121,7 +121,7 @@ h2 {
 .week img {
     width: 50px;
     filter: invert(100%);
-    filter: brightness(3);
+    filter: brightness(2);
 }
 
 .article {
