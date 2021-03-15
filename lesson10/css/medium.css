@@ -66,6 +66,7 @@
     }
     .week {
         border: solid #353535 2px;
+        padding: 0;
     }
     .week h3 {
         margin: 0;
