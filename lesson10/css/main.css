@@ -132,6 +132,10 @@ h2 {
     max-width: 40%;
     float: right;
 }
+.article p a:link, .article p a:visited, .article p a:hover, .article p a:active .article p a:focus {
+    text-decoration: none;
+    color: #FFFFFF;
+}
 .contact p {
     text-align: left;
     padding: .4em;
