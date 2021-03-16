@@ -1,0 +1,24 @@
+section {
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border: solid grey 1px;
+    text-align: center;
+    color:rgb(28, 153, 136);
+}
+img {
+    width: 80%;
+    box-shadow: 10px 10px 50px black;
+}
+p {
+    color: black;
+    font-size: 12px;
+}
+@media only screen and (min-width: 37.5em) {
+    p {
+        color: black;
+        font-size: 16px;
+    }
+    img {
+        width: 60%;
+    }
+}
