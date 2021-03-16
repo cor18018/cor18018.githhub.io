@@ -63,8 +63,7 @@ window.addEventListener("load", () => {
         console.log(jsObject);
         
         for (var i = 0; jsObject.list.length; i++) {
-
-            let time = jsObject.list[i].dt_txt;
+            let time = jsObject.list[i]["dt_txt"];
             time_of_day = time.substr(time.indexOf(' ')+1);
             date = time.substr(0,time.indexOf(' '))
             short = new Date(date).toLocaleString('en-us', {weekday:'short'});
