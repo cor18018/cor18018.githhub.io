@@ -190,3 +190,157 @@ footer p{
     margin: auto;
     text-align: center;
 }
+/*----Medium----*/
+@media only screen and (min-width: 37.5em) {
+    header {
+        grid-template-columns: 2em 92%;
+    }
+    #icon {
+        max-width: 4em;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    .motto p {
+        text-align: center;
+        margin: 0;
+        font-size: 20px;
+    }
+    h2 {
+        padding-top: .5em;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    nav {
+        max-width: 100%;
+    }
+    #nav {
+        grid-template-columns: repeat(7,auto);
+    }
+    #nav li {
+        display: block;
+    }
+    #nav a:link, #nav a:visited, #nav a:hover, #nav a:active #nav a:focus {
+        text-align: center;
+    }
+    button {
+        display: none;
+    }
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "1 2"
+                             "3 4"
+                             "5 6"
+                             "7 8"
+                             "9";
+        
+    }
+    .card {
+        margin: 1em
+    }
+    .card img[data-src]{
+        width: 100%;
+        max-height: 100%;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .contact h3 {
+        grid-column: 2;
+    }
+    #contact {
+        grid-column: 2;
+        margin: 0;
+    }
+    #address {
+        display: block;
+    }
+    #add_icon {
+        height: 20px;
+        padding-right: 5px;
+    }
+    #email_icon {
+        height: 20px;
+    }
+    #phone_icon {
+        height: 13px;
+    }
+    .media {
+        grid-column: 2;
+        display: block;
+    }
+    .media img{
+        width: 5%;
+        padding: .5em;
+    }
+    #map {
+        max-width: 50%;
+        grid-column: 1;
+        grid-row: 1/4;
+    }
+    footer p{
+        font-size: 14px;
+    }
+}
+/*----Large----*/
+@media only screen and (min-width: 60em) {
+    header {
+        grid-template-columns: 10% 8% 60%;
+    }
+    header h1 {
+        grid-column: 3;
+        font-size: 35px;
+        margin: auto;
+        padding-top: .5em;
+    }
+    #icon {
+        margin: 10%;
+        grid-column: 2;
+    }
+    nav {
+        background-color: #284b63;
+    }
+    #nav {
+        width: 80%;
+        margin: auto;
+    }
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "1 2 3"
+                             "4 5 6"
+                             "7 8 9";        
+    }
+    h2 {
+        padding: .5em;
+        margin: 0;
+    }
+    .gallery a:hover{
+        box-shadow: 7px 10px 15px #353535;
+    }
+    .card p {
+        
+    }
+    .card img {
+
+    }
+    #map {
+        max-width: 40%;
+    }
+    footer {
+        padding-top: 2em;
+        width: 80%;
+        margin: auto;
+    }
+    footer p{
+        font-size: 16px;
+    }
+    .legal {
+        padding-top: 1em;
+    }
+}
