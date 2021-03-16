@@ -1,0 +1,333 @@
+/*-----Nav-----*/
+#icon {
+    max-width: 3em;
+    height: auto;
+    padding: .5em;
+}
+header, footer {
+    background-color: #284b63;
+}
+header {
+    display: grid;
+    grid-template-columns: 4em auto 4em;
+    margin: 0;
+}
+header h1{
+    grid-column: 2;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.motto p {
+    margin: 0 auto;
+    padding-bottom: .5em;
+    padding-left: .5em;
+}
+button {
+    grid-column: 3;
+    background-color: #284b63;
+    border: none;
+    color: white;
+    padding: 0;
+    cursor:pointer; 
+}
+nav {
+    margin-top: auto;
+}
+#nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0;
+    margin-top: 0;
+    background-color: #284b63;
+}
+#nav li {
+    display: none;
+}
+#nav a:link, #nav a:visited, #nav a:hover, #nav a:active #nav a:focus {
+    display: block;
+    padding: 0.75em;
+    text-align: left;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+#nav a.active-page {
+  background-color: #d9d9d9;
+  color: #353535;
+}
+#navigation a {
+    text-decoration: none;
+}
+#nav a:hover {
+    color: white;
+    background-color: #353535;
+}
+#nav.resonsive li {
+    display: block;
+}
+body {
+    font-family: "Fraunces", serif;
+    background-color: #3c6e71;
+    color: white;
+}
+/*-----Main-------*/
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color:#284b63;
+    margin-bottom: 1em;
+}
+section img {
+    width: 100%;
+}
+section h2 {
+    font-size: 36px;
+    padding-top: .4em;;
+    margin:0;
+}
+section h3 {
+    color:#d9d9d9;
+    margin: .5em 0;
+}
+section p {
+    margin: 0;
+    padding-bottom: .5em;
+}
+
+/*-----Footer-----*/
+.contact p {
+    text-align: left;
+    padding: .4em;
+}
+#address {
+    display: none;
+}
+#email_icon {
+    padding-right: 5px;
+    height: 15px;
+}
+#phone_icon {
+    padding-right: 5px;
+    height: 10px;
+}
+.media {
+    display: none;
+}
+#map {
+    max-width: 100%;
+    max-height: 100%;
+    display:block;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    max-width: 100%;
+    max-height: 100%;
+}
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus  {
+    color: #FFFFFF;
+}
+footer {
+    padding: 1em;
+}
+footer h3 {
+    margin: 0;
+}
+.legal {
+    padding-top: .4em;
+}
+#currentDate {
+    padding-top: .4em;
+}
+footer p{
+    font-size: 11px;
+    margin: auto;
+    text-align: center;
+}
+/*----Medium----*/
+@media only screen and (min-width: 37.5em) {
+    /*-----Nav-----*/
+    header {
+        grid-template-columns: 2em 92%;
+    }
+    #icon {
+        max-width: 4em;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    .motto p {
+        text-align: center;
+        margin: 0;
+        font-size: 20px;
+    }
+    h2 {
+        padding-top: .5em;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    nav {
+        max-width: 100%;
+    }
+    #nav {
+        grid-template-columns: repeat(7,auto);
+    }
+    #nav li {
+        display: block;
+    }
+    #nav a:link, #nav a:visited, #nav a:hover, #nav a:active #nav a:focus {
+        text-align: center;
+    }
+    button {
+        display: none;
+    }
+    /*-----Main-----*/
+
+    section {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    section:nth-child(even) img {
+        grid-column: 2;
+    }
+    
+    section:nth-child(even) div {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    section:nth-child(even) h2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    section h2 {
+        padding: .5em;
+    }
+    section h3 {
+        margin: auto 0;
+        font-size: 24px;
+    }
+    section div {
+        margin: auto 0;
+        font-size: 20px;
+    }
+    section img {
+        width: 95%;
+        padding: .5em;
+        margin: 0 auto;
+    }
+
+
+    /*-----Footer-----*/
+    .contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .contact h3 {
+        grid-column: 2;
+    }
+    #contact {
+        grid-column: 2;
+        margin: 0;
+    }
+    #address {
+        display: block;
+    }
+    #add_icon {
+        height: 20px;
+        padding-right: 5px;
+    }
+    #email_icon {
+        height: 20px;
+    }
+    #phone_icon {
+        height: 13px;
+    }
+    .media {
+        grid-column: 2;
+        display: block;
+    }
+    .media img{
+        width: 5%;
+        padding: .5em;
+    }
+    #map {
+        max-width: 50%;
+        grid-column: 1;
+        grid-row: 1/4;
+    }
+    footer p{
+        font-size: 14px;
+    }
+}
+/*----Large----*/
+@media only screen and (min-width: 60em) {
+    /*-----Nav-----*/
+    header {
+        grid-template-columns: 10% 8% 60%;
+    }
+    header h1 {
+        grid-column: 3;
+        font-size: 35px;
+        margin: auto;
+        padding-top: .5em;
+    }
+    #icon {
+        margin: 10%;
+        grid-column: 2;
+    }
+    nav {
+        background-color: #284b63;
+    }
+    #nav {
+        width: 80%;
+        margin: auto;
+    }
+    /*-----Main-----*/
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .towns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+        padding: 1em;
+    }
+    section {
+        display: block;
+        margin:0;
+    }
+    section h3 {
+        font-size: 18px;
+        padding: .3em;
+    }
+    section h2 {
+        padding: 0;
+        padding-top: .5em;
+    }
+    
+    /*-----Footer-----*/
+    #map {
+        max-width: 40%;
+    }
+    footer {
+        padding-top: 2em;
+        width: 80%;
+        margin: auto;
+    }
+    footer p{
+        font-size: 16px;
+    }
+    .legal {
+        padding-top: 1em;
+    }
+}

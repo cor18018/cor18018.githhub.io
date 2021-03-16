@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Preston Town Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preston Home Page">
+    <script src="js/page.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/preston_main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="icon" src="images/road_icon.png" alt="icon">
+        <div class="motto">
+            <h1>Weather Roads</h1>
+            <p>We check roads</p>
+        </div>
+        <button class="menu">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="nav">
+            <li><a href="/lesson9/index.html">Home</a></li>
+            <li><a href="#" class="active-page">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <p class="alert_message">Community Message: <br>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at
+            the city pavilion.
+        </p>
+        <div class="banner">
+            <picture id="hero">
+                <source media="(max-width:400px)" srcset="images/hero_image400.jpg">
+                <source media="(max-width:1000px)" srcset="images/hero_image1000.jpg">
+                <source media="(max-width:2000px)" srcset="images/hero_image1600.jpg">
+                <img src="images/hero_imageOG.jpg" alt="banner">
+            </picture>
+            <div class="summary">
+                <h3><u>Weather Summary</u></h3>
+                <p> Currently: <span id="current"></span></p>
+                <p> High: <span id="high"></span></p>
+                <p> Wind Chill: <span id="chill"></span></p>
+                <p> Humidity: <span id="humidity"></span></p>
+                <p> Wind Speed: <span id="speed"></span></p>
+            </div>
+        </div>
+        <div class="forecast">
+            <h3>Five Day Forecast</h3>
+            <div class="week">
+
+            </div>
+        </div>
+        <div class="article">
+            <h3>Preston is a vacationer’s dream. There’s always something to do.</h3>
+            <img id="portrait" src="images/article_pic1.webp" alt="placholder">
+            <p>
+                Winter brings the best snow and the most beautiful winter scenery. Snowmobiling and cross country skiing
+                is great. You can travel down Mink Creek, Cub River, and even Logan Canyon and see the most beautiful
+                winter wonderland ever, ending up at Bloomington or Bear Lake.<br><br>
+
+                Spring brings golfing at our 18-hole course, floating and kayaking down the beautiful Bear River, as
+                well as fishing, boating, water-skiing or just camping at our 10 reservoirs. There are three swimming
+                resorts close by and also a new swimming pool in town.<br><br>
+
+                Oneida Narrows Reservoir – 15 miles NE of Preston on SH 36 – wetland & juniper; Trumpeter Swan in
+                winter, Wild Turkey, Eagle, Osprey<br><br>
+                Glendale Reservoir – 3 miles NE of Preston on Hwy 36 – Camping, Restrooms<br><br>
+                Downata – 3 1/2 miles SE of Downey on Hwy 91 – Pelicans, ponds & wetland<br><br>
+                Swan Lake Marsh – 17 miles NW of Preston on SH 91 – wetlands<br><br>
+                Oxford Slough Area – 1 mile N of Oxford on County Rd D-1 – wetland<br><br>
+                Twin Lakes – 4 miles W SH 91 Twin Lakes Rd – wetlands; Loons in spring<br><br>
+                Weston Reservoir – 13 miles E of I-15 Weston Exit SH 36 – farmland
+                Water Recreation<br><br>
+
+                Cub River offers some great fly fishing. Most of the fish are cutthroat trout with some hatchery rainbow
+                this is a catch and release area. Located between Preston and Franklin city turn on Cub River Road from
+                Hwy 91.<br><br>
+                Foster Reservoir: Rainbow trout, perch, bluegill, crappie and largemouth bass. Should be good for trout
+                and fair for perch and bluegill. One mile north of Preston off SH 34 onto East Glendale Road.
+                Johnson Reservoir: Rainbow trout, bluegill, largemouth bass. Good fishing for rainbow trout; fair for
+                bluegill. Located 3 miles east of Preston on Oneida Road, just past Lamont Reservoir.
+                Lamont Reservoir: Rainbow trout, bluegill, perch, largemouth bass. Fair fishing for bluegill, perch and
+                rainbow trout. Located 3 miles east of Preston on Oneida Road.<br><br>
+                Oneida Reservoir: is used to generate electricity, it is open to the public for boating, fishing,
+                swimming etc. There are 2 boat ramps, and camping available as well as a day use picnic area. Fish who
+                call the reservoir home include smallmouth bass, walleye, and occasional trout. Below the dam another 6
+                miles of Bear River provide great trout fishing in the beautiful Oneida Narrows. Drive from Grace or
+                Preston on Highway 34 to the intersection with Highway 36, 5 miles north of Preston. Turn onto Highway
+                36 and drive east 3 miles (almost to the Bear River), turn north on the Oneida Narrows Road and drive 6
+                miles to Oneida Reservoir.<br><br>
+                Treasureton Reservoir: Rainbow trout: This reservoir is managed for quality size trout. Located near
+                SH34, 11 miles north of Preston.<br><br>
+                Condie Reservoir: Bluegill, perch and largemouth bass. Access from SH 34, 8 miles north of Preston.
+                Twin Lakes Reservoir: hosts largemouth bass, perch, rainbow trout and bluegills; Popular for water
+                skiing and camping as well as fishing. Day use of this reservoir is only $5 per vehicle and an
+                additional $3 fee to stay overnight. Access from Twin Lakes Road off SH91 north of Preston. Call
+                208-852-3731 for more info.<br><br>
+                Hot Springs<br>
+
+                Maple Grove Hot Springs: provides natural hot spring therapy pools, patron kitchen, gift shop and
+                camping fronting the Oneida Narrows Reservoir.<br>
+                Riverdale Resort: Swimming pools, therapy pools and water slides as well as snack bar, bed and breakfast
+                hotel rooms and RV sites are among the amenities here.<br>
+            </p>
+            <p>
+                Source: <a href="https://www.prestonidaho.net/discover-the-natural-beauty-resorces-of-citys-outdoors/">https://www.prestonidaho.net/discover-the-natural-beauty-resorces-of-citys-outdoors/</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <div>
+                <h3>Contact Information</h3>
+                <p id="address"><img id=add_icon src="images/pin.png" alt="pin">1234 Bond Sav Rexburg, ID 83440</p>
+                <p id="email"><img id=email_icon src="images/email.png" alt="email">Email: example@email.com</p>
+                <p id="phone"><img id=phone_icon src="images/phone.png" alt="phone">Phone Number: 111-111-1111</p>
+            </div>
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+            </map>
+            <div class="media">
+                <a href="https://www.facebook.com/" target="_blank"><img id="fb" src="images/fb_icon.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img id="insta" src="images/insta_icon.png"
+                        alt="instagram"></a>
+                <a href="https://twitter.com/" target="_blank"><img id="twitter" src="images/twitter_icon.png"
+                        alt="twitter"></a>
+            </div>
+            <div id="map">
+                <div class="gmap_canvas"><iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Peston,%20ID&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
+                        href="https://putlocker-is.org"></a><br>
+                </div>
+            </div>
+        </div>
+        <p class="legal">&copy; <span id="copyrightyear"></span> | Andrew Cornelius | Idaho |
+            <a href=" https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="currentDate"></p>
+        <p id="api">Weather Data From: https://openweathermap.org</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Bodoni Moda']
+            }
+        });
+    </script>
+</body>
+
+
+</html>
