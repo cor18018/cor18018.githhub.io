@@ -1,34 +1,4 @@
 window.addEventListener("load", () => {
-    //Lazy Load
-    const images = document.querySelectorAll("[data-src]");
-    function preloadImage(img){
-        console.log("trying to load " + img);
-        const src= img.getAttribute("data-src");
-        if(!src){
-            return;
-        }
-        img.src= src;
-    }
-    const imgOptions = {
-        threshold:0,
-        rootMargin: "0px 0px 300px 0px"
-    }
-    const imgObserver = new IntersectionObserver( (entries,imgObserver)=>{
-        console.log(entries)
-        entries.forEach(entry=>{
-            if(!entry.isIntersecting){
-                return;
-            }
-            else {
-                preloadImage(entry.target);
-                imgObserver.unobserve(entry.target);
-            }
-        })
-    }, imgOptions);
-    images.forEach(image=>{
-        imgObserver.observe(image);
-    })
-    
     //Current Date and Copyright
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
@@ -66,54 +36,6 @@ window.addEventListener("load", () => {
     } else {
         message.classList.remove("no_alert");
     }
-    
-    //Home Api
-    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
-    fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        const towns = jsonObject['towns'];
-        console.table(jsonObject);
-        
-        for (let i = 0; i < towns.length; i++ ) {
-
-            if ((towns[i].name === 'Preston') || (towns[i].name === 'Soda Springs')
-            ||(towns[i].name === 'Fish Haven')) {
-
-                let town = document.createElement('section');
-                let h2 = document.createElement('h2');
-                let h3 = document.createElement('h3');
-                let info = document.createElement('div');
-                let founded = document.createElement('p');
-                let pop = document.createElement('p');
-                let rain = document.createElement('p');
-                let image = document.createElement('img');
-
-                h2.textContent = towns[i].name;
-                h3.textContent = towns[i].motto;
-                image.setAttribute('src', 'images/' + towns[i].photo);
-                image.setAttribute('alt', towns[i].name);
-                founded.textContent = 'Year Founded: ' + towns[i].yearFounded;
-                pop.textContent = 'Population: ' + towns[i].currentPopulation;
-                rain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + '%';
-
-                town.appendChild(h2);
-                town.appendChild(h3);
-                town.appendChild(image);
-                town.appendChild(info);
-                info.appendChild(founded);
-                info.appendChild(pop);
-                info.appendChild(rain);
-
-                document.querySelector('div.towns').appendChild(town);  
-
-        }}
-
-    });
-
     //Preston API
     const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial';
     fetch(apiURL)
