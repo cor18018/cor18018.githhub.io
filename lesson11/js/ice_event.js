@@ -6,9 +6,10 @@ window.addEventListener("load", () => {
         })
         .then((jsonObject) => {
             console.log(jsonObject);
-            let counter = 1;   // CM ADDED THIS
+            let counter = 1;   // CM ADDED THIS NOT SURE IT WOULD WORK
             Object.entries(jsonObject).forEach(([key,event])=> {
                 buildEventCard(event);
+                counter++;
             });
         });
 });
@@ -24,7 +25,7 @@ function buildEventCard(event){
     for (var i = 0; i < event.tags.length; i++){
                             
         }
-    card.innerHTML = `<div class="box-${counter}">
+    card.innerHTML = `
                     <p>${event.tags[0]}</p>
                      <h2>${event.properties.name}</h2>
                      <p>Location: ${event.properties.location}</p>
