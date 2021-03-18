@@ -1,0 +1,39 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+}
+h2 {
+     color: rgba(255, 255, 255, 0.781);
+     font-weight: 900;
+}
+p {
+    color: white;
+    font-size: 14px;
+}
+.card {
+    /* background-color: gray; */
+    margin: 0 auto;
+    max-width: 400px;
+}
+section {
+    padding: 1em;
+    /* border-radius: 25px; */
+}
+main {
+    border-radius: 25px;
+}
+.event:nth-of-type(1){
+    background: rgb(255, 211, 130);
+}
+.event:nth-of-type(2){
+    background: rgb(153, 224, 156);
+}
+.event:nth-of-type(3){
+    background: rgb(94, 202, 166);
+}
+.event:nth-of-type(4){
+    background: rgb(33, 169, 247);
+}
+.event:nth-of-type(5){
+    background-color: #2c9afb;
+}
