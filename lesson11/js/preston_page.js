@@ -36,6 +36,27 @@ window.addEventListener("load", () => {
     } else {
         message.classList.remove("no_alert");
     }
+    //Events
+    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+    fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        const towns = jsonObject['towns'];
+        console.table(jsonObject);
+        for (var i = 0; i < towns[6].events.length; i++){
+            let card = document.createElement("div");
+            let event = document.createElement("p");
+            event.textContent = towns[6].events[i];
+            card.appendChild(event);
+            console.log(event);
+
+            document.querySelector('.events').appendChild(card);
+        }
+    });
+
     //Preston API
     const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial';
     fetch(apiURL)
