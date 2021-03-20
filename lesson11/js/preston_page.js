@@ -45,7 +45,6 @@ window.addEventListener("load", () => {
     })
     .then(function (jsonObject) {
         const towns = jsonObject['towns'];
-        console.table(jsonObject);
         for (var i = 0; i < towns[6].events.length; i++){
             let card = document.createElement("div");
             let event = document.createElement("p");

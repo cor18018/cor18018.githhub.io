@@ -126,7 +126,16 @@ h2 {
     filter: invert(100%);
     filter: brightness(2);
 }
-
+.events {
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
+    background-color:#353535;
+    padding: 1em;
+}
+.events p {
+    font-size: 14px;
+}
 .article {
     padding: 1em;
 }
@@ -278,6 +287,9 @@ footer p{
         margin: 0;
         margin-bottom: .5em;
     }
+    .events p {
+        font-size: 16px;
+    }
     .article h3 {
         padding-left: 1em;
     }
@@ -362,6 +374,9 @@ footer p{
     }
     .article {
         padding-left: 0;
+    }
+    .article p {
+        line-height: 1.3;
     }
     #portrait {
         padding-bottom: 1em;
