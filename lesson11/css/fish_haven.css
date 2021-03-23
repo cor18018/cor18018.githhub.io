@@ -118,6 +118,10 @@ h2 {
     background-color:#353535;
     padding: 1em;
 }
+.event_list {
+    padding-bottom: 1em;
+    border-bottom: solid #d9d9d9 1px;
+}
 .events p {
     font-size: 14px;
 }
