@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fish Haven Town Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fish Haven Home Page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/fish_haven.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="icon" src="images/road_icon.png" alt="icon">
+        <div class="motto">
+            <h1>Weather Roads</h1>
+            <p>We check roads</p>
+        </div>
+        <button class="menu">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda_springs.html">Soda Springs</a></li>
+            <li><a href="#" class="active-page">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Fish Haven Idaho</h2>
+        <div class="banner">
+            <picture id="hero">
+                <source media="(max-width:400px)" srcset="images/hero_image400.jpg">
+                <source media="(max-width:1000px)" srcset="images/hero_image1000.jpg">
+                <source media="(max-width:2000px)" srcset="images/hero_image1600.jpg">
+                <img src="images/hero_imageOG.jpg" alt="banner">
+            </picture>
+            <div class="summary">
+                <h3><u>Weather Summary</u></h3>
+                <p> Currently: <span id="current"></span></p>
+                <p> High: <span id="high"></span></p>
+                <p> Wind Chill: <span id="chill"></span></p>
+                <p> Humidity: <span id="humidity"></span></p>
+                <p> Wind Speed: <span id="speed"></span></p>
+            </div>
+        </div>
+        <div class="forecast">
+            <h3>Five Day Forecast</h3>
+            <div class="week"></div>
+        </div>
+        <div class="events">
+            <h3 class="event_list">Upcoming Events:</h3>
+        </div>
+        <div class="article">
+            <h3>Bear Lake Bike & Hiking Trails</h3>
+            <img id="portrait" src="images/fish_bike.jpg" alt="placholder">
+            <p>
+                As spring makes its way into Bear Lake, early leaves and flowers welcome you as you ride or walk a lake
+                or mountain trail. Temperatures are mild, even during the middle of the summer, so hiking is pleasant.
+                The fall months of September and October are some of the prettiest and most scenic with the brightly
+                colored leaves and the tranquility of the lake. Find Bike and Recreation Rentals!<br><br>
+
+                <u>Our Main Trails with maps are at the bottom of the page. Here are some other trails without maps:</u><br><br>
+
+                <u>Garden City Park Walkway</u><br>
+                A raised wooden walkway to the lake at Garden City Park.<br><br>
+
+                <u>Limber Pine Trail</u><br>
+                A relaxing one mile loop to the 2,000 year old limber pine.<br><br>
+
+                <u>Great Western Trail</u><br>
+                A trail that extends from the Arizona border all the way to the Canadian border. The trail passes
+                through the Wasatch/Cache National Forest and Bear Lake area.<br><br>
+
+                <u>Bloomington Lake Trail</u><br>
+                Hike or drive via a rough, unpaved road. This small glacial lake is located in a spectacular setting of
+                cliffs and waterfalls. During the summer, wildflowers Surround this clear mountain lake.<br><br>
+
+                <u>Logan Canyon Trails</u><br>
+                Logan Canyon National Scenic Byway is home to several great mountain biking trails. Whether you are an
+                advanced rider or want to take the family for an enjoyable ride, you’ll find trails for all skill
+                levels.<br><br>
+
+                <u>Highline Trail</u><br>
+                A 55-mile trail accessible from Bloomington Canyon, Paris Canyon, Emigration Canyon and Logan Canyon.
+                Open to hiking, horseback riding, motor bikes and mountain bikes.<br><br>
+
+                <u>Hodges Canyon</u><br>
+                The trail passes through the South Sinks area, near the top. The sinks are indentations in the earth
+                caused by water eroding the limestone beneath.<br><br>
+            </p>
+            <p>
+                Source: <a
+                    href="https://bearlake.org/bike-hiking-trails/">https://bearlake.org/bike-hiking-trails/</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <div>
+                <h3>Contact Information</h3>
+                <p id="address"><img id=add_icon src="images/pin.png" alt="pin">1234 Bond Sav Rexburg, ID 83440</p>
+                <p id="email"><img id=email_icon src="images/email.png" alt="email">Email: example@email.com</p>
+                <p id="phone"><img id=phone_icon src="images/phone.png" alt="phone">Phone Number: 111-111-1111</p>
+            </div>
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+            </map>
+            <div class="media">
+                <a href="https://www.facebook.com/" target="_blank"><img id="fb" src="images/fb_icon.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img id="insta" src="images/insta_icon.png"
+                        alt="instagram"></a>
+                <a href="https://twitter.com/" target="_blank"><img id="twitter" src="images/twitter_icon.png"
+                        alt="twitter"></a>
+            </div>
+            <div id="map">
+                <div class="gmap_canvas"><iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Peston,%20ID&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
+                        href="https://putlocker-is.org"></a><br>
+                </div>
+            </div>
+        </div>
+        <p class="legal">&copy; <span id="copyrightyear"></span> | Andrew Cornelius | Idaho |
+            <a href=" https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="currentDate"></p>
+        <p id="api">Weather Data From: https://openweathermap.org</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Bodoni Moda']
+            }
+        });
+    </script>
+    <script src="js/fish_haven.js"></script>
+</body>
+
+
+</html>

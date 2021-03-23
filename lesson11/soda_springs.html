@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Soda Springs Town Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soda Springs Home Page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/soda_springs.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="icon" src="images/road_icon.png" alt="icon">
+        <div class="motto">
+            <h1>Weather Roads</h1>
+            <p>We check roads</p>
+        </div>
+        <button class="menu">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#" class="active-page">Soda Springs</a></li>
+            <li><a href="fish_haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Soda Springs Idaho</h2>
+        <div class="banner">
+            <picture id="hero">
+                <source media="(max-width:400px)" srcset="images/hero_image400.jpg">
+                <source media="(max-width:1000px)" srcset="images/hero_image1000.jpg">
+                <source media="(max-width:2000px)" srcset="images/hero_image1600.jpg">
+                <img src="images/hero_imageOG.jpg" alt="banner">
+            </picture>
+            <div class="summary">
+                <h3><u>Weather Summary</u></h3>
+                <p> Currently: <span id="current"></span></p>
+                <p> High: <span id="high"></span></p>
+                <p> Wind Chill: <span id="chill"></span></p>
+                <p> Humidity: <span id="humidity"></span></p>
+                <p> Wind Speed: <span id="speed"></span></p>
+            </div>
+        </div>
+        <div class="forecast">
+            <h3>Five Day Forecast</h3>
+            <div class="week"></div>
+        </div>
+        <div class="events">
+            <h3 class="event_list">Upcoming Events:</h3>
+        </div>
+        <div class="article">
+            <h3>SODA SPRINGS PARKS</h3>
+            <img id="portrait" src="images/soda_park.jpg" alt="placholder">
+            <p>
+                The City of Soda Springs offers five beautiful parks with playground equipment, baseball diamonds,
+                tennis courts, basketball courts, sand volleyball courts, a youth fishing pond and acres of hiking
+                trails and a frisbee golf course surrounded by beautiful creeks, wildlife and scenery.<br><br>
+
+                All of our Parks and Pavilion's can be reserved by calling City Hall at 208-547-2600.<br>
+                Fees for Pavilion Reservations-<br><br>
+
+                <u>Park Pavilions</u><br>
+                City/Kelly/Hooper Resident/Non-Resident<br>
+                (under 50 people - 1/2 day) $20 / $30<br>
+                (under 50 - whole day) $35 / $45<br>
+                (over 50 - 1/2 day) $40/ $50<br>
+                (over 50 - whole day) $60 / $70<br>
+                <u>Octagon</u><br>
+                (under 50 people - 1/2 day) $10 / $20<br>
+                (under 50 - whole day) $25 / $35<br>
+                (over 50 - 1/2 day) $30 / $40<br>
+                (over 50 - whole day) $50 / $60<br>
+                To learn more about the individual parks and the amenities they offer choose one from the left.<br>
+                The City of Soda Springs offers Equipment Rentals<br><br>
+
+                <u>Equipment Rentals</u><br>
+                BBQ Grills fill propane when return / $10 delivery<br>
+                Cross Country Skis no charge<br>
+                Disc Golf Discs $10.00 deposit per disc<br>
+                Horse Shoes/Volleyball & Net/Basketball no charge<br>
+                Sound Systems $100 deposit<br><br>
+
+
+                <u>Can I reserve park fields or other facilities?</u><br>
+
+                The pavilions at City Park, Hooper Park, Kelly Park and Octagon Park can be reserved for your gathering.
+                Other areas at all other parks are available on a first come, first serve basis.<br>
+
+                Sports facilities including baseball fields and basketball courts are also available on a first come,
+                first serve basis with a few exceptions. The baseball fields and soccer fields at Kelly Park and City
+                Park are home fields for the City Recreation Leagues. These fields must be vacated for scheduled league
+                games.<br><br>
+
+                <u>Can I take my dog for a walk in the city parks?</u><br>
+                Of course. We simply ask that you be a responsible and considerate dog owner.<br>
+
+                You must keep your dog on leash. Some people prefer to not be approached by even the nicest dog. Dogs
+                are excited and unpredictable when meeting other dogs and children. Remember that you are ultimately
+                responsible for the actions of your pet. Be cautious and in control at all times.<br>
+
+                Also, please clean up after your best friend. You may think it’s not that important, but what if
+                everyone walking dogs felt the same way? Soon our streets and parks would be covered in you-know-what.
+                Use a plastic bag to cover your hand, pick up the offending matter, turn the bag inside out so the waste
+                is securely inside it, tie up the bag and toss it in a trash can. We also encourage you to keep your dog
+                away from the trash cans, so he is not tempted to come back later and tip it for a midnight snack. Thank
+                you in advance for helping to keep your City parks clean and pet accessible.
+            </p>
+            <p>
+                Source: <a
+                    href="https://www.sodaspringsid.com/recreation/0_1/index.php">https://www.sodaspringsid.com/recreation/0_1/index.php</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <div>
+                <h3>Contact Information</h3>
+                <p id="address"><img id=add_icon src="images/pin.png" alt="pin">1234 Bond Sav Rexburg, ID 83440</p>
+                <p id="email"><img id=email_icon src="images/email.png" alt="email">Email: example@email.com</p>
+                <p id="phone"><img id=phone_icon src="images/phone.png" alt="phone">Phone Number: 111-111-1111</p>
+            </div>
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+            </map>
+            <div class="media">
+                <a href="https://www.facebook.com/" target="_blank"><img id="fb" src="images/fb_icon.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img id="insta" src="images/insta_icon.png"
+                        alt="instagram"></a>
+                <a href="https://twitter.com/" target="_blank"><img id="twitter" src="images/twitter_icon.png"
+                        alt="twitter"></a>
+            </div>
+            <div id="map">
+                <div class="gmap_canvas"><iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Peston,%20ID&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
+                        href="https://putlocker-is.org"></a><br>
+                </div>
+            </div>
+        </div>
+        <p class="legal">&copy; <span id="copyrightyear"></span> | Andrew Cornelius | Idaho |
+            <a href=" https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p id="currentDate"></p>
+        <p id="api">Weather Data From: https://openweathermap.org</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Bodoni Moda']
+            }
+        });
+    </script>
+    <script src="js/soda_springs.js"></script>
+</body>
+
+
+</html>

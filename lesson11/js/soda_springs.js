@@ -27,15 +27,6 @@ window.addEventListener("load", () => {
     window.onresize = () => {
         if (window.innerWidth > 760) mainnav.classList.remove("responsive");
     };
-
-    //Alert Message
-    const message = document.querySelector(".alert_message");
-    var friday = d.getDate();
-    if (friday != 5) {
-        message.classList.toggle("no_alert");
-    } else {
-        message.classList.remove("no_alert");
-    }
     //Events
     const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -45,10 +36,10 @@ window.addEventListener("load", () => {
     })
     .then(function (jsonObject) {
         const towns = jsonObject['towns'];
-        for (var i = 0; i < towns[6].events.length; i++){
+        for (var i = 0; i < towns[0].events.length; i++){
             let card = document.createElement("div");
             let event = document.createElement("p");
-            event.textContent = towns[6].events[i];
+            event.textContent = towns[0].events[i];
             card.appendChild(event);
 
             document.querySelector('.events').appendChild(card);
@@ -56,7 +47,7 @@ window.addEventListener("load", () => {
     });
 
     //Preston API
-    const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial';
+    const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial';
     fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -76,7 +67,7 @@ window.addEventListener("load", () => {
         document.getElementById('speed').innerHTML = jsObject.wind.speed + " mph";  
     });
 
-    const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial'
+    const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=70a3382c326cf2cbb5e5cc5922554860&units=imperial'
     fetch(apiURL2)
     .then((response) => response.json())
     .then((jsObject) => {
