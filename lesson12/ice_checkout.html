@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE Checkout</title>
+    <link rel="stylesheet" href="css/ice_checkout.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <section class="card">
+        <div class="summary">
+            <img src="images/progress-bar.jpg" alt="progress-bar" class="progress">
+            <div class="order">
+                <h1>Order Summary</h1>
+                <p id="order">ORDER SUBTOTAL</p><span>$ 46.95</span>
+                <p id="ship">SHIPPING &amp; HANDLING</p><span>$ 6.00</span>
+                <div class="tax"><p id="tax">SALES TAX</p><span >$ 8.05</span></div>
+                <p id="due">PAYMENT DUE</p><span id="total">$ 61.00</span>
+            </div>
+            <p class="return"><a href="#">Return to cart</a></p>
+        </div>
+        <div class="payment">
+            <img src="images/visa.JPG" alt="visa/paypal" class="visa">
+            <div class="details">
+                <h1>Payment Details</h1>
+                <div class="input">
+                    <label for="fullname">CARDHOLDER NAME</label>
+                    <input id="fullname" type="text" placeholder="John Doe" maxlength="50" autofocus>
+                    <hr>
+                </div>
+                <div class="input">
+                    <label for="card">CARD NUMBER</label>
+                    <input id="card" type="number" maxlength="20" placeholder="0123 4567 8901 2345" required>
+                    <hr>
+                </div>
+                <div class="input">
+                    <label for="date">EXPIRATION DATE</label>
+                    <input id="date" type="month" placeholder="Mon/Yr" maxlength="6" required>
+                    <hr>
+                </div>
+                <div class="input">
+                    <label for="cvc">CVV</label>
+                    <input id="cvc" type="password" maxlength="4" placeholder="012" required>
+                    <hr>
+                </div>
+                <div class="input">
+                    <label for="address">BILLING ADDRESS</label>
+                    <input id="address" required>
+                    <input id="shipping" type="checkbox"><label for="shipping">Same as shipping address</label>
+                    <hr>
+                </div>
+            </div>
+            <button class="next">NEXT</button>
+            <p id="cancel"><a href="#">Cancel</a></p>
+            <p id="secure">
+                <span class="material-icons">
+                    lock
+                </span>
+                This is a secure transaction
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
