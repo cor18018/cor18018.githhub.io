@@ -81,7 +81,7 @@ $theme: rgb(28,108,229);
             .input {
                 display: grid;
                 padding: 1em;
-                border-bottom: 1px solid $seethrough;
+                
                 label {
                     grid-column: 1;
                     color: $seethrough;
@@ -91,6 +91,10 @@ $theme: rgb(28,108,229);
                     margin-right: auto;
                     margin: 0;
                     padding: .5em;
+                    padding-left: 0;
+                    .material-icons {
+                        font-size: 14px;
+                    }
                     
                 }
                 input {
@@ -98,6 +102,22 @@ $theme: rgb(28,108,229);
                     border-style: none;
                     font-size: 16px;
                     font-weight: 700;
+                    border-bottom: 1px solid $seethrough;
+                }
+               
+            }
+            #info {
+                display: grid;
+                grid-template-columns: 3fr 100px;
+                column-gap: 1em;
+                #cvv {
+                    grid-column: 2;
+                    grid-row: 1;
+                    
+                }
+                #cvc {
+                    grid-column: 2;
+                    grid-row: 2;
                 }
             }
             #shipping {
@@ -118,11 +138,12 @@ $theme: rgb(28,108,229);
         width: 9em;
         padding: .55em;
         box-shadow: 3px 3px 25px grey;
+        margin-left: 2em;
     }
     #cancel {
         position: absolute;
         font-size: 11px;
-        left: 15em;
+        left: 17.5em;
         bottom: 2.5em;
         a:link, a:visited, a:hover, a:active {
             color:$theme;
@@ -148,18 +169,18 @@ $theme: rgb(28,108,229);
         width: 900px;
 
         .summary {
+            img {
+                padding-top: 2em;
+            }
             position: relative;
             .material-icons{
                 display: block;
                 position: absolute;
-                top: -.213em;
+                top: -.0209em;
                 right: -.35em;
-                font-size: 169px;
+                font-size: 168px;
                 color: $theme;
             }
-        }
-        .next {
-            margin-left: 2em;
         }
         #cancel {
             left: 18em;
