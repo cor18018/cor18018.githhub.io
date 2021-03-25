@@ -156,6 +156,7 @@
 
 .card #secure {
   font-size: 11px;
+  padding-right: .5em;
   text-align: right;
   color: #a5a5a5a1;
   font-weight: 700;
