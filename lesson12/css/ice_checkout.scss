@@ -1,26 +1,29 @@
-$transparent: #f1f0f093;
+$transparent: #e2e0e093;
 $seethrough:#a5a5a5a1;
 $theme: rgb(28,108,229);
+.bg {
+    display: none;
+}
 
-
-body {
+.card {
     font-family: 'Open Sans', sans-serif;
     color: grey;
     font-weight: 500;
     width: 400px;
     margin: 0 auto;
-}
-
-.card {
+    background-color: white;
+    h1 {
+        font-size: 32px;
+        font-weight: 500;
+    }
     .summary {
         background-color: $transparent;
+        .material-icons{
+            display: none;
+        }
         .order {
             display: grid;
             padding: 2em;
-            h1 {
-                font-size: 30px;
-                font-weight: 500;
-            }
             span {
                 text-align: right;
                 margin: auto;
@@ -47,8 +50,129 @@ body {
                 grid-template-columns: 3fr 1fr;
                 border-bottom: 1px solid $seethrough;
                 padding-bottom: .75em;
+                margin-bottom: 1em;
             }
             
+            
         }
+        .return {
+            text-align: left;
+            font-size: 11px;
+            padding-bottom: 4em;
+            padding-left:3.5em;
+            margin: 0 auto;
+            a:link, a:visited, a:hover, a:active {
+                color:$theme;
+                text-decoration: none;
+            }
+        }
+    }
+    .payment {
+        position: relative;
+        img {
+            position: absolute;
+            width: 9em;
+            right: 1em;
+            top: 1em;
+        }
+        .details {
+            
+            padding: 2em;
+            .input {
+                display: grid;
+                padding: 1em;
+                border-bottom: 1px solid $seethrough;
+                label {
+                    grid-column: 1;
+                    color: $seethrough;
+                    grid-column: 1;
+                    font-size: 14px;
+                    font-weight: 700;    
+                    margin-right: auto;
+                    margin: 0;
+                    padding: .5em;
+                    
+                }
+                input {
+                    grid-column: 1;
+                    border-style: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            #shipping {
+                cursor: pointer;
+            }
+        }
+        
+    }
+    .next {
+        background-color: $theme;
+        border: none;
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        width: 9em;
+        padding: .55em;
+        box-shadow: 3px 3px 25px grey;
+    }
+    #cancel {
+        position: absolute;
+        font-size: 11px;
+        left: 15em;
+        bottom: 2.5em;
+        a:link, a:visited, a:hover, a:active {
+            color:$theme;
+            text-decoration: none;
+        }
+    }
+    #secure {
+        font-size: 11px;
+        text-align: right;
+        color:$seethrough;
+        font-weight: 700;
+        .material-icons {
+            font-size: 12px;
+        }
+    }
+}
+@media only screen and (min-width: 560px) {
+    .card {
+        margin-top: 5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 900px;
+
+        .summary {
+            position: relative;
+            .material-icons{
+                display: block;
+                position: absolute;
+                top: -.213em;
+                right: -.35em;
+                font-size: 169px;
+                color: $theme;
+            }
+        }
+        .next {
+            margin-left: 2em;
+        }
+        #cancel {
+            left: 18em;
+            bottom: 3.25em;
+        }
+        
+    }
+    .bg {
+        top:0em;
+        position: absolute;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        z-index: -1;
+        height: 100%;
     }
 }

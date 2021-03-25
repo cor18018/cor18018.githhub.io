@@ -13,9 +13,12 @@
 </head>
 
 <body>
+    
     <section class="card">
         <div class="summary">
-            <img src="images/progress-bar.jpg" alt="progress-bar" class="progress">
+            <img src="images/progress-bar.jpg" alt="progress-bar" class="progress"><span class="material-icons">
+                play_arrow
+                </span>
             <div class="order">
                 <h1>Order Summary</h1>
                 <p id="order">ORDER SUBTOTAL</p><span>$ 46.95</span>
@@ -32,29 +35,25 @@
                 <div class="input">
                     <label for="fullname">CARDHOLDER NAME</label>
                     <input id="fullname" type="text" placeholder="John Doe" maxlength="50" autofocus>
-                    <hr>
+                    
                 </div>
                 <div class="input">
                     <label for="card">CARD NUMBER</label>
                     <input id="card" type="number" maxlength="20" placeholder="0123 4567 8901 2345" required>
-                    <hr>
+                    
                 </div>
                 <div class="input">
                     <label for="date">EXPIRATION DATE</label>
                     <input id="date" type="month" placeholder="Mon/Yr" maxlength="6" required>
-                    <hr>
-                </div>
-                <div class="input">
                     <label for="cvc">CVV</label>
                     <input id="cvc" type="password" maxlength="4" placeholder="012" required>
-                    <hr>
+                    
                 </div>
                 <div class="input">
                     <label for="address">BILLING ADDRESS</label>
-                    <input id="address" required>
-                    <input id="shipping" type="checkbox"><label for="shipping">Same as shipping address</label>
-                    <hr>
+                    <input id="address" placeholder="1234 West Bond Rexburg, ID 83440"required>
                 </div>
+                <input id="shipping" type="checkbox"><label for="shipping">Same as shipping address</label>
             </div>
             <button class="next">NEXT</button>
             <p id="cancel"><a href="#">Cancel</a></p>
@@ -65,7 +64,9 @@
                 This is a secure transaction
             </p>
         </div>
+        
     </section>
+    <img src="images/background.jpg" alt="background" class="bg">
 </body>
 
 </html>
