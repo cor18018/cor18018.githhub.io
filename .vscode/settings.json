@@ -1,5 +1,5 @@
 {
-    "liveServer.settings.CustomBrowser": "firefox",
+    "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
     "extensions.ignoreRecommendations": true
     "extensions.ignoreRecommendations": true,
     "files.autoSave": "off"
