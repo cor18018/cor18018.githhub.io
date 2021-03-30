@@ -3,22 +3,24 @@ $timberwolf: #dbd4ceff;
 $steel-blue: #5686b3ff;
 $beau-blue: #d4e5efff;
 $cultured: #f5f5f5ff;
+$text: rgb(83, 83, 83);
 
 body {
     background-color: $isabelline;
     font-family: 'Open Sans', sans-serif;
+    color: $text;
 }
 header {
     background-color: $steel-blue;
     display: grid;
-    grid-template-columns: 4em 2fr 1fr;
+    grid-template-columns: 4em 2fr 3fr;
     margin: 0;
     img {
         padding: .5em;
     }
     p {
         margin: 0 auto;
-        padding-top: .5em;
+        padding-top: 1.25em;
     }
     button {
         grid-column: 1;
@@ -30,11 +32,11 @@ header {
     }
     a:link, a:visited, a:hover, a:active a:focus {
         display: block;
-        padding: 0.75em;
         text-align: right;
         text-decoration: none;
         color: $cultured;
     }
+    
 }
 nav {
     margin-top: auto;
@@ -72,7 +74,82 @@ nav {
         display: block;
     }
 }
+main {
+    .temples_banner{
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        padding:.5em;
+    }
+}
 
 footer {
     background-color: $beau-blue;
+}
+/*Medium*/
+@media only screen and (min-width: 37.5em) {
+    header {
+        grid-template-columns: 2fr 1fr;
+        img {
+            padding-left: 1em;
+            padding-top: 2em;
+            width: 150px;
+        }
+        p {
+            margin: 0;
+            margin-right: .5em;
+        }
+        button {
+            display: none;
+        }
+    }
+    nav {
+        max-width: 100%;
+        #nav {
+            padding-top: 2em;
+            grid-template-columns: repeat(5,auto);
+            li {
+                display: block;
+            }
+            a:link, a:visited, a:hover, a:active a:focus {
+                text-align: center;
+                border-radius: 25px 25px 0 0;
+                font-size: 18px;
+            }
+        }
+    }
+    main {
+        margin: 0 10%;
+        .temples_banner {
+            margin: 0 auto;
+            max-width: 800px;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    footer {
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    header {
+        grid-template-columns: 12% 5fr 1fr;
+        img {
+            grid-column: 2;
+        }
+        p {
+            grid-column: 3;
+        }
+    }
+    nav {
+        background-color: $steel-blue;
+        #nav {
+            width: 80%;
+            margin: auto;
+        }
+    }
 }
