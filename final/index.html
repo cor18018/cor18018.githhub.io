@@ -7,24 +7,37 @@
     <meta name="description" content="Home Page">
     <title>Temple Inn &amp; Suites</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <header>
-        <img src="" alt="logo" class="logo">
-        <h1>Temple Inn &amp; Suites</h1>
+        <button class="menu">&#9776;</button>
+        <img src="images/temple_logo.png" alt="logo" class="logo">
         <p id="phone"><a href="tel:333-333-3333">333-333-3333</a></p>
     </header>
     <nav>
-        <li><a href="#"></a>Home</li>
-        <li><a href="#"></a>Temples</li>
-        <li><a href="#"></a>Reservations</li>
-        <li><a href="#"></a>Services</li>
-        <li><a href="#"></a>Contact Us</li>
+        <ul id="nav">
+            <li><a href="#" class="active-page">Home</a></li>
+            <li><a href="#">Temples</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a> </li>
+        </ul>
+
     </nav>
     <!--Nav will hang once user scrolls down-->
     <main>
         <div class="temples_banner">
-
+            <button class="left"><span class="material-icons">
+                navigate_before
+                </span></button>
+            <button class="right"><span class="material-icons">
+                navigate_next
+                </span></button>
         </div>
         <div class="summary">
 
@@ -46,5 +59,6 @@
             }
         });
     </script>
+    <script src="js/home.js"></script>
 </body>
 </html>

@@ -3,3 +3,76 @@ $timberwolf: #dbd4ceff;
 $steel-blue: #5686b3ff;
 $beau-blue: #d4e5efff;
 $cultured: #f5f5f5ff;
+
+body {
+    background-color: $isabelline;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    background-color: $steel-blue;
+    display: grid;
+    grid-template-columns: 4em 2fr 1fr;
+    margin: 0;
+    img {
+        padding: .5em;
+    }
+    p {
+        margin: 0 auto;
+        padding-top: .5em;
+    }
+    button {
+        grid-column: 1;
+        background-color: $steel-blue;
+        border: none;
+        color: $isabelline;
+        padding: 0;
+        cursor:pointer; 
+    }
+    a:link, a:visited, a:hover, a:active a:focus {
+        display: block;
+        padding: 0.75em;
+        text-align: right;
+        text-decoration: none;
+        color: $cultured;
+    }
+}
+nav {
+    margin-top: auto;
+    #nav {
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0;
+        margin-top: 0;
+        background-color: $steel-blue;
+        li {
+            display: none;
+        }
+        a:link, a:visited, a:hover, a:active a:focus {
+            display: block;
+            padding: 0.75em;
+            text-align: left;
+            text-decoration: none;
+            color: $cultured;
+            font-weight: bold;
+        }
+        a.active-page {
+            background-color: $beau-blue;
+            color: $steel-blue;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: $steel-blue;
+            background-color: $beau-blue;
+        }
+    }
+    #nav.resonsive li {
+        display: block;
+    }
+}
+
+footer {
+    background-color: $beau-blue;
+}

@@ -1,0 +1,40 @@
+[
+    {
+        "name":"Oakland California Temple",
+        "phone":"510-531-3200",
+        "address1":"4770 Lincoln Ave",
+        "city":"Oakland",
+        "state":"CA",
+        "zip":94602,
+        "imageurl":"https://assets.ldscdn.org/c7/31/c731edc1ad5337acc342f226ddf3163b74113564/oakland_california_temple_exterior.jpeg"
+    },
+
+    {
+        "name":"Rexburg Idaho Temple",
+        "phone":"208-656-0880",
+        "address1":"750 S 2nd E",
+        "city":"Rexburg",
+        "state":"ID",
+        "zip":83440,
+        "imageurl":"https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg"
+    } ,   
+    {
+        "name":"Meridian Idaho Temple",
+        "phone":"208-957-7300",
+        "address1":"7355 N Linder Rd",
+        "city":"Meridian",
+        "state":"ID",
+        "zip":83646,
+        "imageurl":"https://assets.ldscdn.org/45/fe/45fe894319e4cbd31b097aa0dcc26adf0140e8af/meridian_idaho_temple_front_view.jpeg"
+    },
+
+    {
+        "name":"Boise Idaho Temple",
+        "phone":"208-322-4422",
+        "address1":"1211 S Cole Rd",
+        "city":"Boise",
+        "state":"ID",
+        "zip":83709,
+        "imageurl":"https://assets.ldscdn.org/29/8b/298bdc171826d2561184579b7f51521f36994836/boise_idaho_temple_sunshine.jpeg"
+    } 
+]
