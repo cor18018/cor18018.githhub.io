@@ -1,0 +1,208 @@
+$isabelline: #f0ebe7ff;
+$timberwolf: #dbd4ceff;
+$steel-blue: #5686b3ff;
+$beau-blue: #d4e5efff;
+$cultured: #f5f5f5ff;
+$seethrough:#ffffffb7;
+$text: rgb(83, 83, 83);
+
+body {
+    background-color: $isabelline;
+    font-family: 'Open Sans', sans-serif;
+    color: $text;
+}
+header {
+    background-color: $steel-blue;
+    display: grid;
+    grid-template-columns: 4em 3fr 1fr;
+    margin: 0;
+    img {
+        padding: .5em;
+    }
+    p {
+        margin: 0;
+        padding-top: 1em;
+    }
+    button {
+        grid-column: 1;
+        background-color: $steel-blue;
+        border: none;
+        color: $isabelline;
+        padding: 0;
+        cursor:pointer; 
+    }
+    a:link, a:visited, a:hover, a:active a:focus {
+        display: block;
+        text-align: right;
+        text-decoration: none;
+        color: $cultured;
+        width: 50px;
+    }
+    
+}
+nav {
+    margin-top: auto;
+    #nav {
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0;
+        margin-top: 0;
+        background-color: $steel-blue;
+        li {
+            display: none;
+        }
+        a:link, a:visited, a:hover, a:active a:focus {
+            display: block;
+            padding: 0.75em;
+            text-align: left;
+            text-decoration: none;
+            color: $cultured;
+            font-weight: bold;
+        }
+        a.active-page {
+            background-color: $beau-blue;
+            color: $steel-blue;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: $steel-blue;
+            background-color: $beau-blue;
+        }
+    }
+    #nav.resonsive li {
+        display: block;
+    }
+}
+main {
+    .temples_banner{
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .left {
+            position: absolute;
+            left: 1em;
+            top: 40%;
+            width: 40px;
+            height: 40px;
+            background-color: $seethrough;
+            border: none;
+            border-radius: 50px;
+            .material-icons {
+                color: $steel-blue;
+            }
+        }
+        .right {
+            position: absolute;
+            right: 1em;
+            top: 40%;
+            width: 40px;
+            height: 40px;
+            background-color: $seethrough;
+            border: none;
+            border-radius: 50px;
+            .material-icons {
+                color: $steel-blue;
+            }
+        }
+    }
+    .content {
+        padding:.5em;
+    }
+}
+
+footer {
+    background-color: $beau-blue;
+    padding: 1em;
+    div {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .material-icons {
+        padding-bottom: -2em;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        padding-top: .5em;
+    }
+    a:link, a:visited, a:hover, a:active a:focus {
+        text-decoration: none;
+        color: $text;
+    }
+    a {
+        text-decoration: none;
+    }
+    .legal {
+        text-align: center;
+        a:link, a:visited, a:hover, a:active a:focus {
+            color: $steel-blue;
+        }
+    }
+}
+/*Medium*/
+@media only screen and (min-width: 37.5em) {
+    header {
+        grid-template-columns: 8fr 1fr;
+        img {
+            padding-left: 1em;
+            padding-top: 2em;
+            width: 150px;
+        }
+        p {
+            margin: 0;
+            margin-right: .5em;
+            padding-top: 2.25em;
+        }
+        button {
+            display: none;
+        }
+    }
+    nav {
+        max-width: 100%;
+        #nav {
+            padding-top: 2em;
+            grid-template-columns: repeat(5,auto);
+            li {
+                display: block;
+            }
+            a:link, a:visited, a:hover, a:active a:focus {
+                text-align: center;
+                border-radius: 25px 25px 0 0;
+                font-size: 18px;
+            }
+        }
+    }
+    main {
+        margin: 0 10%;
+        
+    }
+    footer {
+        margin: 0 10%;
+        div {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    header {
+        grid-template-columns: 12% 10fr .75fr;
+        img {
+            grid-column: 2;
+        }
+        p {
+            grid-column: 3;
+        }
+    }
+    nav {
+        background-color: $steel-blue;
+        #nav {
+            width: 80%;
+            margin: auto;
+        }
+    }
+}

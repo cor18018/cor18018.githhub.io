@@ -19,15 +19,17 @@
     <header>
         <button class="menu">&#9776;</button>
         <img src="images/temple_logo.png" alt="logo" class="logo">
-        <p id="phone"><a href="tel:333-333-3333">333-333-3333</a></p>
+        <p id="phone"><a href="tel:333-333-3333"><span class="material-icons">
+                    phone
+                </span></a></p>
     </header>
     <nav>
         <ul id="nav">
             <li><a href="#" class="active-page">Home</a></li>
-            <li><a href="#">Temples</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a> </li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact_us.html">Contact Us</a> </li>
         </ul>
     </nav>
     <!--Nav will hang once user scrolls down-->
@@ -44,8 +46,10 @@
             <div class="summary">
                 <h2>Welcome</h2>
                 <p>We welcome you to our <br>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that
-                    builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ
-                    of Latter-day Saints around the world. The owner-operated company caters to temple workers, patrons, and
+                    builds and manages specialized hotel accommodations near temple locations of The Church of Jesus
+                    Christ
+                    of Latter-day Saints around the world. The owner-operated company caters to temple workers, patrons,
+                    and
                     their families by providing specialized services and accommodations that meet the needs of those
                     patrons. </p>
             </div>
@@ -67,9 +71,23 @@
         </section>
     </main>
     <footer>
-        <p class="legal">&copy; <span id="copyrightyear"></span> | Andrew Cornelius | Idaho |
-            <a href=" https://www.byui.edu/online">BYUI Online Learning</a></p>
-        <p id="currentDate"></p>
+        <div>
+            <span class="material-icons">
+                home
+            </span>
+            <p id="address"><a href="#">2565 W Main Bethesda, MD 20800</a></p>
+            <span class="material-icons">
+                phone
+            </span>
+            <p id="phone"><a href="tel:333-333-3333">333-333-3333</a></p>
+            <span class="material-icons">
+                mail_outline
+            </span>
+            <p id="email">
+                <a href="#">Temple.inn.n.suites@tis.com</a></p>
+        </div>
+        <p class="legal">&copy; <span id="copyrightyear"></span> Temple Inn & Suites | Andrew Cornelius | <a
+                href="resources.html">Resources</a></p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
