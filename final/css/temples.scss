@@ -77,40 +77,36 @@ nav {
     }
 }
 main {
-    .temples_banner{
-        position: relative;
-        img {
-            width: 100%;
-        }
-        .left {
-            position: absolute;
-            left: 1em;
-            top: 40%;
-            width: 40px;
-            height: 40px;
-            background-color: $seethrough;
-            border: none;
-            border-radius: 50px;
-            .material-icons {
-                color: $steel-blue;
-            }
-        }
-        .right {
-            position: absolute;
-            right: 1em;
-            top: 40%;
-            width: 40px;
-            height: 40px;
-            background-color: $seethrough;
-            border: none;
-            border-radius: 50px;
-            .material-icons {
-                color: $steel-blue;
-            }
-        }
+    h2 {
+        padding-left: 1em; 
     }
-    .content {
-        padding:.5em;
+    .card {
+        .temple {
+            img {
+                width: 100%;
+                // box-shadow: 10px 10px 20px $text;
+            }
+            padding: 1em;
+            :nth-child(2) {
+                max-height: 350px;
+            }
+            :nth-child(3) {
+                font-weight: bold;
+            }
+            :nth-child(8) {
+                font-weight: bold;
+            }
+            :nth-child(13) {
+                font-weight: bold;
+            }
+            :nth-child(22) {
+                font-weight: bold;
+            }
+            a:link, a:visited, a:hover, a:active a:focus {
+                text-decoration: none;
+                color: $steel-blue;
+            }
+        }
     }
 }
 
@@ -177,7 +173,19 @@ footer {
     }
     main {
         margin: 0 10%;
-        
+        .card {
+            .temple {
+                max-width: 650px;
+                img {
+                    
+                    box-shadow: 10px 10px 20px $text;
+                }
+                background-color: $cultured;
+                border-radius: 15px;
+                margin: 2em;
+            }
+        }
+    
     }
     footer {
         margin: 0 10%;
@@ -204,5 +212,17 @@ footer {
             width: 80%;
             margin: auto;
         }
+    }
+    main {
+        .card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .temple {
+                img {
+                    
+                }
+            }
+        }
+    
     }
 }

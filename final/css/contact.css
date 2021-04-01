@@ -86,48 +86,6 @@ nav #nav.resonsive li {
   display: block;
 }
 
-main .temples_banner {
-  position: relative;
-}
-
-main .temples_banner img {
-  width: 100%;
-}
-
-main .temples_banner .left {
-  position: absolute;
-  left: 1em;
-  top: 40%;
-  width: 40px;
-  height: 40px;
-  background-color: #ffffffb7;
-  border: none;
-  border-radius: 50px;
-}
-
-main .temples_banner .left .material-icons {
-  color: #5686b3ff;
-}
-
-main .temples_banner .right {
-  position: absolute;
-  right: 1em;
-  top: 40%;
-  width: 40px;
-  height: 40px;
-  background-color: #ffffffb7;
-  border: none;
-  border-radius: 50px;
-}
-
-main .temples_banner .right .material-icons {
-  color: #5686b3ff;
-}
-
-main .content {
-  padding: .5em;
-}
-
 footer {
   background-color: #d4e5efff;
   padding: 1em;

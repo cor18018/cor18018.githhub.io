@@ -1,40 +1,84 @@
-[
-    {
-        "name":"Oakland California Temple",
-        "phone":"510-531-3200",
-        "address1":"4770 Lincoln Ave",
-        "city":"Oakland",
-        "state":"CA",
-        "zip":94602,
-        "imageurl":"https://assets.ldscdn.org/c7/31/c731edc1ad5337acc342f226ddf3163b74113564/oakland_california_temple_exterior.jpeg"
+[{
+        "name": "Oakland California Temple",
+        "phone": "510-531-3200",
+        "address1": "4770 Lincoln Ave",
+        "city": "Oakland",
+        "state": "CA",
+        "zip": 94602,
+        "email": "oakland_temple@lds.org",
+        "status": "PHASE 2: TEMPLE OPEN FOR LIVING ORDINANCES ONLY",
+        "imageurl": "https://assets.ldscdn.org/c7/31/c731edc1ad5337acc342f226ddf3163b74113564/oakland_california_temple_exterior.jpeg",
+        "services": [
+            "Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"
+        ],
+        "history": [
+            "Nestled in the beautiful Oakland Hills, the Oakland Temple is considered by many to be the Beacon of the Bay. Others refer to it as the Crown Jewel of the East Bay. Its beauty can be seen from miles away. The temple stands as a beacon of hope, a standard of truth, and a source of strength for residents in the area.", "The Oakland Temple was dedicated on November 17, 1964 by President David O. McKay. The temple was the second in California (following the Los Angeles California Temple), and the 13th in the world. The temple currently serves Latter-day Saints in the Bay Area of Northern California. There are currently over 200 temples operating, announced or under construction throughout the world."
+        ],
+        "closures": [
+            "Saturday, 3 April 2021", "Monday, 13 September 2021 - Monday, 27 September 2021", "Saturday, 2 October 2021", "Wednesday, 24 November 2021 (Limited Operations)", "Thursday, 25 November 2021", "Friday, 24 December 2021", "Saturday, 25 December 2021", "Friday, 31 December 2021"
+        ]
+
     },
 
     {
-        "name":"Rexburg Idaho Temple",
-        "phone":"208-656-0880",
-        "address1":"750 S 2nd E",
-        "city":"Rexburg",
-        "state":"ID",
-        "zip":83440,
-        "imageurl":"https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg"
-    } ,   
+        "name": "Rexburg Idaho Temple",
+        "phone": "208-656-0880",
+        "address1": "750 S 2nd E",
+        "city": "Rexburg",
+        "state": "ID",
+        "zip": 83440,
+        "email": "rexburg_temple@lds.org",
+        "status": "PHASE 2: TEMPLE OPEN FOR LIVING ORDINANCES ONLY",
+        "imageurl": "https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg",
+        "services": [
+            "Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"
+        ],
+        "history": [
+            "Latter-day Saints first began to settle the Upper Snake River Valley in 1879, following the completion of the Utah Northern Railroad. By 1883, under the direction of Thomas E. Ricks, the city of Rexburg was established, and just a year after that, Idaho's second stake—the Bannock Stake—was organized with headquarters in Rexburg. As was tradition at the time, a stake academy was also founded in 1888: the Bannock Stake Academy. And by 1923, the school had matured into a junior college, named Ricks College after Rexburg's founder.", "In June 2000, Rexburg received a major announcement from the Church that two-year Ricks College would become four-year Brigham Young University–Idaho by fall 2001. New construction gripped the quiet farming community as housing complexes seemed to appear overnight. By the end of 2003, the First Presidency made a second major announcement: Idaho's third temple would be built in Rexburg. Rexburg became Idaho's fastest growing city as its 17,500 residents in 2000 multiplied to 28,000 by the time the temple was dedicated in 2008.", "On Tuesday, June 28, 2005, Architectural Nexus applied for its building permit to begin preparation work for the temple site. Included in the application materials were building and site plans. The plans revealed a five-story, 57,504 square-foot building. The single steeple, set on the east side of the east-facing building, would rise 168 feet, topped by a gold-leafed statue of Moroni. A garden plaza would separate the temple from an adjacent stake center to the west, leaving only the temple and its landscaping visible from 7th South."
+        ],
+        "closures": [
+            "Saturday, 3 April 2021","Monday, 12 April 2021 - Monday, 26 April 2021","Saturday, 24 July 2021","Monday, 23 August 2021 - Monday, 13 September 2021","Saturday, 2 October 2021","Wednesday, 24 November 2021 - Thursday, 25 November 2021","Friday, 24 December 2021 - Saturday, 25 December 2021","Friday, 31 December 2021 - Saturday, 1 January 2022"
+        ]
+    },
     {
-        "name":"Meridian Idaho Temple",
-        "phone":"208-957-7300",
-        "address1":"7355 N Linder Rd",
-        "city":"Meridian",
-        "state":"ID",
-        "zip":83646,
-        "imageurl":"https://assets.ldscdn.org/45/fe/45fe894319e4cbd31b097aa0dcc26adf0140e8af/meridian_idaho_temple_front_view.jpeg"
+        "name": "Meridian Idaho Temple",
+        "phone": "208-957-7300",
+        "address1": "7355 N Linder Rd",
+        "city": "Meridian",
+        "state": "ID",
+        "zip": 83646,
+        "email": "meridian_temple@lds.org",
+        "status": "PHASE 2-B: TEMPLE OPEN FOR LIVING ORDINANCES AND LIMITED PROXY BAPTISMS",
+        "imageurl": "https://assets.ldscdn.org/45/fe/45fe894319e4cbd31b097aa0dcc26adf0140e8af/meridian_idaho_temple_front_view.jpeg",
+        "services": [
+            "No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"
+        ],
+        "history": [
+            "Idaho's fifth temple was announced during the Saturday morning session of the 181st Annual General Conference for the city of Meridan, the third largest city in Idaho, located about 11 miles west of the capital city of Boise. The Church has been established since 1855 in Idaho where over 410,000 members of the Church reside.", "Meridian is the fastest-growing city in Idaho with a 115 percent increase in population from 2000 to 2010. During this time of rapid expansion, three additional stakes were organized in Meridian and four more in the surrounding communities of Nampa (the second largest city in the state), Kuna, and Middleton. The Meridian Idaho Temple will reduce demands on the nearby Boise Idaho Temple, where endowment rooms often fill near capacity during busy operating hours."
+        ],
+        "closures": [
+            "Saturday, 3 April 2021","Sunday, 30 May 2021 - Monday, 14 June 2021","Saturday, 2 October 2021","Sunday, 31 October 2021 - Monday, 15 November 2021","Wednesday, 24 November 2021 - Thursday, 25 November 2021","Friday, 24 December 2021 - Saturday, 25 December 2021","Friday, 31 December 2021 - Saturday, 1 January 2022","Additional Information"
+        ]
     },
 
     {
-        "name":"Boise Idaho Temple",
-        "phone":"208-322-4422",
-        "address1":"1211 S Cole Rd",
-        "city":"Boise",
-        "state":"ID",
-        "zip":83709,
-        "imageurl":"https://assets.ldscdn.org/29/8b/298bdc171826d2561184579b7f51521f36994836/boise_idaho_temple_sunshine.jpeg"
-    } 
+        "name": "Boise Idaho Temple",
+        "phone": "208-322-4422",
+        "address1": "1211 S Cole Rd",
+        "city": "Boise",
+        "state": "ID",
+        "zip": 83709,
+        "email": "boise_temple@lds.org",
+        "status": "PHASE 2-B: TEMPLE OPEN FOR LIVING ORDINANCES AND LIMITED PROXY BAPTISMS",
+        "imageurl": "https://assets.ldscdn.org/29/8b/298bdc171826d2561184579b7f51521f36994836/boise_idaho_temple_sunshine.jpeg",
+        "services": [
+            "No clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"
+        ],
+        "history": [
+            "In 1939, President Heber J. Grant was invited to Idaho's capital where 15 prominent local businessmen offered to the Church any available site in Boise to build Idaho's first temple, but Idaho Falls was chosen due to the concentration of membership in Eastern Idaho. President Grant told the men that when membership increased in the Boise area, a temple would be built there.", "On December 18, 1982, approximately 5,000 members huddled on the site of the Boise Idaho Temple to witness the groundbreaking ceremony where Elder Mark E. Petersen of the Quorum of the Twelve Apostles presided.", "During a special preview, numerous state officials including Idaho Governor John Evans, Lieutenant Governor David Leroy, and Secretary of State Pete Cenarusa toured the interior of the Boise Idaho Temple. Also part of the group were 246 ministers of other faiths and their family members.", "About 70,000 visitors were expected to tour the Boise Idaho Temple during its 19-day open house, but expectations were exceed when 128,716 people toured the building. The usual number of convert baptisms more than doubled the month following the open house; people even called the mission office asking how to get baptized.", "The Boise Idaho Temple was dedicated in 24 sessions—more dedicatory sessions than had been held for any temple since the Salt Lake Temple."
+        ],
+        "closures": [
+            "Saturday, 3 April 2021","Monday, 3 May 2021 - Monday, 17 May 2021","Saturday, 2 October 2021","Monday, 11 October 2021 - Monday, 25 October 2021","Wednesday, 24 November 2021 (Limited Operations)","Thursday, 25 November 2021","Friday, 24 December 2021 - Saturday, 25 December 2021","Friday, 31 December 2021 (Limited Operations)"
+        ]
+    }
 ]
