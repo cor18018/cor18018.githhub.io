@@ -100,13 +100,13 @@ main .temples_banner .left {
   top: 40%;
   width: 40px;
   height: 40px;
-  background-color: #ffffffb7;
+  background-color: #ffffffea;
   border: none;
   border-radius: 50px;
 }
 
 main .temples_banner .left .material-icons {
-  color: #5686b3ff;
+  color: #535353;
 }
 
 main .temples_banner .right {
@@ -115,7 +115,7 @@ main .temples_banner .right {
   top: 40%;
   width: 40px;
   height: 40px;
-  background-color: #ffffffb7;
+  background-color: #ffffffea;
   border: none;
   border-radius: 50px;
 }

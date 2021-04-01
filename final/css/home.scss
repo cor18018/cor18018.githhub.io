@@ -3,7 +3,7 @@ $timberwolf: #dbd4ceff;
 $steel-blue: #5686b3ff;
 $beau-blue: #d4e5efff;
 $cultured: #f5f5f5ff;
-$seethrough:#ffffffb7;
+$seethrough:#ffffffea;
 $text: rgb(83, 83, 83);
 
 body {
@@ -92,7 +92,7 @@ main {
             border: none;
             border-radius: 50px;
             .material-icons {
-                color: $steel-blue;
+                color: $text;
             }
         }
         .right {

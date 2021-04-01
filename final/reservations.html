@@ -34,7 +34,47 @@
     </nav>
     <!--Nav will hang once user scrolls down-->
     <main>
-        
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Guest Information</legend>
+                <label class="top">First Name<input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
+                <label class="top">Last Name<input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone Number<input type="tel" name="phone" placeholder="1234551234"></label>
+                <label class="top">Address<input type="text" name="address" required></label>
+                <label class="top">Address 2<input type="text" name="address" placeholder="Optional"></label>
+                <label class="top">Zip Code<input type="number" name="zip_code" required></label>
+                <label class="top">City<input type="text" name="City" required></label>
+                <label class="top">State
+                    <input list="cities" name="city">
+                    <datalist id="cities">
+                        <option value="California">
+                        <option value="Idaho">
+                    </datalist>
+                </label>
+                <label class="top">Booking Day<input type="date" name="booking"></label>
+                <label class="top">Room Preference
+                    <select name="region">
+                        <option value="">Select Room&#9662;</option>
+                        <option value="single2">One Room 2 Full</option>
+                        <option value="single2">One Room Full</option>
+                        <option value="single3">One Room Queen</option>
+                        <option value="single2">One Room 2 Queen</option>
+                        <option value="single4">One Room King</option>
+                        <option value="double">Two Rooms Full</option>
+                        <option value="double2">Two Rooms Full/Queen</option>
+                        <option value="double3">Two Rooms Full/King</option>
+                        <option value="double4">Two Rooms Queen</option>
+                        <option value="double5">Two Rooms Queen/King</option>
+                        <option value="double6">Two Rooms King</option>
+                    </select>
+                </label>
+                <div>Special Accomendations or Comments:</div>
+                <label class="top">
+                    <textarea name="add_info" rows="8" cols="38"></textarea></label>
+                <input type="submit" value="Book Room" class="submitBtn">
+            </fieldset>
+        </form>
     </main>
     <footer>
         <div>

@@ -106,7 +106,19 @@ main {
                 text-decoration: none;
                 color: $steel-blue;
             }
+            div {
+            padding: 1em;
+            text-align: center;
+            background-color: $beau-blue;
+            p {
+                font-weight: bold;
+                span {
+                    font-weight: lighter;
+                }
+            }
         }
+        }
+        
     }
 }
 

@@ -123,6 +123,20 @@ main .card .temple a:link, main .card .temple a:visited, main .card .temple a:ho
   color: #5686b3ff;
 }
 
+main .card .temple div {
+  padding: 1em;
+  text-align: center;
+  background-color: #d4e5efff;
+}
+
+main .card .temple div p {
+  font-weight: bold;
+}
+
+main .card .temple div p span {
+  font-weight: lighter;
+}
+
 footer {
   background-color: #d4e5efff;
   padding: 1em;
