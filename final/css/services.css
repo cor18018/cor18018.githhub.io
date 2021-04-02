@@ -86,6 +86,43 @@ nav #nav.resonsive li {
   display: block;
 }
 
+nav #services {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  padding: 0;
+  margin-top: 0;
+  background-color: #f5f5f5ff;
+}
+
+nav #services li {
+  display: none;
+}
+
+nav #services a:link, nav #services a:visited, nav #services a:hover, nav #services a:active a:focus {
+  display: block;
+  padding: 0.75em;
+  text-align: left;
+  text-decoration: none;
+  color: #535353;
+  font-weight: bold;
+}
+
+nav #services a {
+  text-decoration: none;
+}
+
+nav #services a:hover {
+  color: #5686b3ff;
+  background-color: #d4e5efff;
+}
+
+nav #services.resonsive li {
+  display: block;
+}
+
 footer {
   background-color: #d4e5efff;
   padding: 1em;
@@ -157,6 +194,22 @@ footer .legal a:link, footer .legal a:visited, footer .legal a:hover, footer .le
     text-align: center;
     border-radius: 25px 25px 0 0;
     font-size: 18px;
+  }
+  nav #nav #sub {
+    display: block;
+  }
+  nav #nav #sub #services {
+    display: none;
+  }
+  nav #nav #sub #services li {
+    display: block;
+  }
+  nav #nav #sub #services li a:link, nav #nav #sub #services li a:visited, nav #nav #sub #services li a:hover, nav #nav #sub #services li a:active a:focus {
+    font-size: 14px;
+    border-radius: 0;
+  }
+  nav #nav #sub:hover #services {
+    display: block;
   }
   main {
     margin: 0 10%;
