@@ -124,6 +124,25 @@ main .temples_banner .right .material-icons {
   color: #5686b3ff;
 }
 
+main .temples_banner .book {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  background-color: #5686b3ff;
+  color: #f5f5f5ff;
+  text-align: center;
+  padding: .5em 1em;
+  margin: 0;
+  border-radius: 25px;
+  font-size: 14px;
+  -webkit-box-shadow: 10px 10px 20px #535353;
+          box-shadow: 10px 10px 20px #535353;
+}
+
+main .temples_banner a:link, main .temples_banner a:visited, main .temples_banner a:hover, main .temples_banner a:active a:focus {
+  text-decoration: none;
+}
+
 main .content {
   padding: .5em;
 }
@@ -215,6 +234,9 @@ footer .legal a:link, footer .legal a:visited, footer .legal a:hover, footer .le
   }
   main .temples_banner .right {
     top: 45%;
+  }
+  main .temples_banner .book {
+    font-size: 16px;
   }
   footer {
     margin: 0 10%;

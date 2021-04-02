@@ -123,6 +123,14 @@ nav #services.resonsive li {
   display: block;
 }
 
+main .service {
+  padding: .5em;
+}
+
+main .desk {
+  width: 100%;
+}
+
 footer {
   background-color: #d4e5efff;
   padding: 1em;
@@ -214,6 +222,17 @@ footer .legal a:link, footer .legal a:visited, footer .legal a:hover, footer .le
   main {
     margin: 0 10%;
   }
+  main .service {
+    margin: 0 auto;
+  }
+  main .desk {
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    -webkit-box-shadow: 10px 10px 20px #535353;
+            box-shadow: 10px 10px 20px #535353;
+  }
   footer {
     margin: 0 10%;
   }
@@ -242,5 +261,11 @@ footer .legal a:link, footer .legal a:visited, footer .legal a:hover, footer .le
   nav #nav {
     width: 80%;
     margin: auto;
+  }
+  main .service {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
   }
 }

@@ -109,7 +109,13 @@ nav {
     }
 }
 main {
-    
+    .service {
+        padding: .5em;
+        
+    }
+    .desk {
+        width: 100%;
+    }
 }
 
 footer {
@@ -193,7 +199,17 @@ footer {
     }
     main {
         margin: 0 10%;
-        
+        .service{
+            margin: 0 auto;
+            
+        }
+        .desk {
+            max-width: 800px;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-bottom: 2em;
+            box-shadow: 10px 10px 20px $text;
+        }
     }
     footer {
         margin: 0 10%;
@@ -219,6 +235,16 @@ footer {
         #nav {
             width: 80%;
             margin: auto;
+        }
+    }
+    main {
+        .service {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        .desk {
+            
+            
         }
     }
 }

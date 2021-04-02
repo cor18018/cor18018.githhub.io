@@ -108,6 +108,23 @@ main {
                 color: $steel-blue;
             }
         }
+        .book {
+            position: absolute;
+            bottom: 1em;
+            right: 1em;
+            background-color: $steel-blue;
+            color: $cultured;
+            text-align: center;
+            padding: .5em 1em;
+            margin: 0;
+            border-radius: 25px;
+            font-size: 14px;
+            box-shadow: 10px 10px 20px $text;
+            
+        }
+        a:link, a:visited, a:hover, a:active a:focus {
+            text-decoration: none;
+        }
     }
     .content {
         padding:.5em;
@@ -188,6 +205,9 @@ footer {
             }
             .right {
                 top: 45%;
+            }
+            .book {
+                font-size: 16px;
             }
         }
     }
