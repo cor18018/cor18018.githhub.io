@@ -34,26 +34,28 @@
     </nav>
     <!--Nav will hang once user scrolls down-->
     <main>
+        
         <form method="get" action="thanks.html">
+            <img src="images/booking.jpg" alt="room" class="banner">
             <fieldset>
                 <legend>Guest Information</legend>
-                <label class="top">First Name<input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
-                <label class="top">Last Name<input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
-                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label class="top">Phone Number<input type="tel" name="phone" placeholder="1234551234"></label>
-                <label class="top">Address<input type="text" name="address" required></label>
-                <label class="top">Address 2<input type="text" name="address" placeholder="Optional"></label>
-                <label class="top">Zip Code<input type="number" name="zip_code" required></label>
-                <label class="top">City<input type="text" name="City" required></label>
-                <label class="top">State
+                <label class="first">First Name<input type="text" name="name" pattern="[A-Za-z]{5,}" placeholder="John" required></label>
+                <label class="last">Last Name<input type="text" name="name" pattern="[A-Za-z]{5,}" placeholder="Doe"required></label>
+                <label class="email">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="number">Phone Number<input type="tel" name="phone" placeholder="1234551234"></label>
+                <label class="address">Address<input type="text" name="address" required></label>
+                <label class="address2">Address 2<input type="text" name="address" placeholder="Optional"></label>
+                <label class="zip">Zip Code<input type="number" name="zip_code" required></label>
+                <label class="city">City<input type="text" name="City" required></label>
+                <label class="state">State
                     <input list="cities" name="city">
                     <datalist id="cities">
                         <option value="California">
                         <option value="Idaho">
                     </datalist>
                 </label>
-                <label class="top">Booking Day<input type="date" name="booking"></label>
-                <label class="top">Room Preference
+                <label class="booking">Booking Day<input type="date" name="booking"></label>
+                <label class="room">Room Preference
                     <select name="region">
                         <option value="">Select Room&#9662;</option>
                         <option value="single2">One Room 2 Full</option>
@@ -69,10 +71,11 @@
                         <option value="double6">Two Rooms King</option>
                     </select>
                 </label>
-                <div>Special Accomendations or Comments:</div>
-                <label class="top">
-                    <textarea name="add_info" rows="8" cols="38"></textarea></label>
-                <input type="submit" value="Book Room" class="submitBtn">
+                <div></div>
+                <label class="info">
+                    Special Accomendations or Comments:
+                    <textarea name="add_info" rows="8"></textarea></label>
+                <input type="submit" value="Book Now" class="submitBtn">
             </fieldset>
         </form>
     </main>
@@ -81,7 +84,7 @@
             <span class="material-icons">
                 home
             </span>
-            <p id="address"><a href="#">2565 W Main Bethesda, MD 20800</a></p>
+            <p id="address"><a href="#">4800 Montgomery Ln #300, Bethesda, MD 20814</a></p>
             <span class="material-icons">
                 phone
             </span>

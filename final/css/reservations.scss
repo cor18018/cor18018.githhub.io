@@ -78,6 +78,44 @@ nav {
 }
 main {
     
+    form {
+        img {
+            width: 100%;
+            
+        }
+        fieldset {
+            legend{
+                margin:0 auto;
+            }
+            border: 2px solid $text;
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: 1fr;
+            label {
+                padding: .5em;
+            }
+            input {
+                display: grid;
+                margin-top: .5em;
+                
+                border-radius: 5px;
+                border: 1px solid $steel-blue;
+            }
+            select, textarea {
+                border: 1px solid $steel-blue;
+                border-radius: 5px;
+            }
+            input[type=submit] {
+                background-color: $steel-blue;
+                color: $cultured;
+                text-align: center;
+                padding: .5em 2em;
+                margin: 0;
+                border-radius: 25px;
+            }
+        }
+        
+    }
 }
 
 footer {
@@ -144,6 +182,43 @@ footer {
     main {
         margin: 0 10%;
         
+        form {
+            img {
+                max-width: 800px;
+                border-radius: 10px;
+                margin: 0 auto;
+                margin-bottom: 2em;
+                box-shadow: 10px 10px 20px $text;
+            }
+            padding: 1em;
+            max-width: 740px;
+            margin: 0 auto;
+            fieldset {
+                padding: 3em;
+                grid-template-columns: 1fr 1fr;
+                .first{
+                    grid-column: 1;
+                }
+                label {
+                    margin: 0;
+                }
+                .info {
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                }
+                select {
+                    margin-top: .5em;
+                }
+                textarea {
+                    margin-top: 1em;
+                }
+                .submitBtn{
+                    grid-row: 8;
+                    grid-column: 1/-1;
+                }
+            }
+            
+        }
     }
     footer {
         margin: 0 10%;
@@ -169,6 +244,13 @@ footer {
         #nav {
             width: 80%;
             margin: auto;
+        }
+    }
+    main {
+        margin: 0 10%;
+        form {
+            padding: 2em;
+                       
         }
     }
 }

@@ -86,6 +86,49 @@ nav #nav.resonsive li {
   display: block;
 }
 
+main form img {
+  width: 100%;
+}
+
+main form fieldset {
+  border: 2px solid #535353;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+main form fieldset legend {
+  margin: 0 auto;
+}
+
+main form fieldset label {
+  padding: .5em;
+}
+
+main form fieldset input {
+  display: -ms-grid;
+  display: grid;
+  margin-top: .5em;
+  border-radius: 5px;
+  border: 1px solid #5686b3ff;
+}
+
+main form fieldset select, main form fieldset textarea {
+  border: 1px solid #5686b3ff;
+  border-radius: 5px;
+}
+
+main form fieldset input[type=submit] {
+  background-color: #5686b3ff;
+  color: #f5f5f5ff;
+  text-align: center;
+  padding: .5em 2em;
+  margin: 0;
+  border-radius: 25px;
+}
+
 footer {
   background-color: #d4e5efff;
   padding: 1em;
@@ -161,6 +204,46 @@ footer .legal a:link, footer .legal a:visited, footer .legal a:hover, footer .le
   main {
     margin: 0 10%;
   }
+  main form {
+    padding: 1em;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  main form img {
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    -webkit-box-shadow: 10px 10px 20px #535353;
+            box-shadow: 10px 10px 20px #535353;
+  }
+  main form fieldset {
+    padding: 3em;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  main form fieldset .first {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  main form fieldset label {
+    margin: 0;
+  }
+  main form fieldset .info {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  main form fieldset select {
+    margin-top: .5em;
+  }
+  main form fieldset textarea {
+    margin-top: 1em;
+  }
+  main form fieldset .submitBtn {
+    -ms-grid-row: 8;
+    grid-row: 8;
+    grid-column: 1/-1;
+  }
   footer {
     margin: 0 10%;
   }
@@ -189,5 +272,11 @@ footer .legal a:link, footer .legal a:visited, footer .legal a:hover, footer .le
   nav #nav {
     width: 80%;
     margin: auto;
+  }
+  main {
+    margin: 0 10%;
+  }
+  main form {
+    padding: 2em;
   }
 }
