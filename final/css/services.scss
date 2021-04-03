@@ -111,10 +111,26 @@ nav {
 main {
     .service {
         padding: .5em;
-        
+    
+    }
+    .hall {
+        padding: .5em;
+        .reception {
+            width: 100%;
+            float: center;
+        }
     }
     .desk {
         width: 100%;
+    }
+    #info {
+        a:link, a:visited, a:hover, a:active a:focus {
+            text-decoration: none;
+            color: $steel-blue;
+        }
+        a {
+            text-decoration: none;
+        }
     }
 }
 
@@ -203,6 +219,11 @@ footer {
             margin: 0 auto;
             
         }
+        .hall {
+            .reception {
+                max-width: 600px;
+            }
+        }
         .desk {
             display: block;
             max-width: 800px;
@@ -242,6 +263,17 @@ footer {
         .service {
             display: grid;
             grid-template-columns: 2fr 1fr;
+        }
+        .hall {
+            .reception {
+                float:right;
+            }
+            #essentials {
+                padding-top: 3em;
+            }
+        }
+        #info {
+            padding-top: 7em;
         }
     }
 }

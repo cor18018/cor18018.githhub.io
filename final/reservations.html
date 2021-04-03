@@ -36,7 +36,9 @@
     <main>
         
         <form method="get" action="thanks.html">
+            <h2>Reservations</h2>
             <img src="images/booking.jpg" alt="room" class="banner">
+            
             <fieldset>
                 <legend>Guest Information</legend>
                 <label class="first">First Name<input type="text" name="name" pattern="[A-Za-z]{5,}" placeholder="John" required></label>
@@ -71,9 +73,8 @@
                         <option value="double6">Two Rooms King</option>
                     </select>
                 </label>
-                <div></div>
                 <label class="info">
-                    Special Accomendations or Comments:
+                    Special Accomendations/Comments:
                     <textarea name="add_info" rows="8"></textarea></label>
                 <input type="submit" value="Book Now" class="submitBtn">
             </fieldset>

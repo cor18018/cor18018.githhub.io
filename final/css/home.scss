@@ -129,6 +129,9 @@ main {
     .content {
         padding:.5em;
     }
+    .summary {
+        padding: .5em;
+    }
 }
 
 footer {
@@ -197,8 +200,11 @@ footer {
         .temples_banner {
             margin: 0 auto;
             max-width: 800px;
+            box-shadow: 10px 10px 20px $text;
+            border-radius: 10px;
             img {
                 max-width: 100%;
+                border-radius: 10px;
             }
             .left {
                 top: 45%;
