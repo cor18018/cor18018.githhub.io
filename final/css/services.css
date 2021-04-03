@@ -226,6 +226,7 @@ footer .legal a:link, footer .legal a:visited, footer .legal a:hover, footer .le
     margin: 0 auto;
   }
   main .desk {
+    display: block;
     max-width: 800px;
     border-radius: 10px;
     margin: 0 auto;

@@ -204,6 +204,7 @@ footer {
             
         }
         .desk {
+            display: block;
             max-width: 800px;
             border-radius: 10px;
             margin: 0 auto;
@@ -241,10 +242,6 @@ footer {
         .service {
             display: grid;
             grid-template-columns: 2fr 1fr;
-        }
-        .desk {
-            
-            
         }
     }
 }
