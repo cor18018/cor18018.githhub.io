@@ -75,6 +75,36 @@ nav {
     #nav.resonsive li {
         display: block;
     }
+    #services {
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0;
+        margin-top: 0;
+        background-color: $cultured;
+        li {
+            display: none;
+        }
+        a:link, a:visited, a:hover, a:active a:focus {
+            display: block;
+            padding: 0.75em;
+            text-align: left;
+            text-decoration: none;
+            color: $text;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            
+            color: $steel-blue;
+            background-color: $beau-blue;
+        }
+    }
+    #services.resonsive li {
+        display: block;
+    }
 }
 main {
     h2 {
@@ -185,6 +215,22 @@ footer {
                 text-align: center;
                 border-radius: 25px 25px 0 0;
                 font-size: 18px;
+            }
+            #sub {
+                display: block;
+                #services {
+                    display: none;
+                    li {
+                        display: block;
+                        a:link, a:visited, a:hover, a:active a:focus {
+                            font-size: 14px;
+                            border-radius:0;
+                        }
+                    }
+                }
+            }
+            #sub:hover #services {
+                display: block;
             }
         }
     }

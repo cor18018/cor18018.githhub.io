@@ -111,7 +111,6 @@ nav {
 main {
     .service {
         padding: .5em;
-    
     }
     .hall {
         padding: .5em;
@@ -119,6 +118,14 @@ main {
             width: 100%;
             float: center;
         }
+    
+    }
+    .rooms {
+        padding: .5em;
+        img {
+            width: 100%;
+        }
+        
     }
     .desk {
         width: 100%;
@@ -232,6 +239,12 @@ footer {
             margin-bottom: 2em;
             box-shadow: 10px 10px 20px $text;
         }
+        .rooms {
+            img {
+                border-radius: 15px;
+                box-shadow: 10px 10px 20px $text;
+            }
+        }
     }
     footer {
         margin: 0 10%;
@@ -269,11 +282,19 @@ footer {
                 float:right;
             }
             #essentials {
-                padding-top: 3em;
+                padding-top: .5em;
+            }
+        }
+        .rooms {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            #title {
+                grid-column: 1/-1;
             }
         }
         #info {
-            padding-top: 7em;
+            padding-top: 9em;
         }
     }
 }
