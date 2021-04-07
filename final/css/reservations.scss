@@ -230,6 +230,22 @@ footer {
     }
     main {
         margin: 0 10%;
+        .thanks {
+            text-align: center;
+            margin: 0 auto;
+            height: 200px;
+            max-width: 500px;
+            background-color: $beau-blue;
+            p {
+                margin: 0 auto;
+                max-width: 375px;
+                padding: .5em
+                
+            }
+            :nth-child(1){
+                padding-top: 3em;
+            }
+        }
         
         form {
             img {

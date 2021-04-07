@@ -109,6 +109,10 @@ nav {
     }
 }
 main {
+    #below {
+        text-align: center;
+        padding-top: 2em;
+    }
     .service {
         padding: .5em;
     }
@@ -138,6 +142,38 @@ main {
         a {
             text-decoration: none;
         }
+    }
+    form {
+        margin-bottom: 2em;
+        fieldset {
+            border: 2px solid $text;
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: 1fr;
+            label {
+                padding: .5em;
+            }
+            input {
+                display: grid;
+                margin-top: .5em;
+                
+                border-radius: 5px;
+                border: 1px solid $steel-blue;
+            }
+            select, textarea {
+                border: 1px solid $steel-blue;
+                border-radius: 5px;
+            }
+            input[type=submit] {
+                background-color: $steel-blue;
+                color: $cultured;
+                text-align: center;
+                padding: .5em 2em;
+                margin: 0;
+                border-radius: 25px;
+            }
+        }
+        
     }
 }
 
@@ -244,6 +280,11 @@ footer {
                 border-radius: 15px;
                 box-shadow: 10px 10px 20px $text;
             }
+        }
+        form {
+            margin: 2em auto;
+            width: 450px;
+            
         }
     }
     footer {
