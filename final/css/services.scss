@@ -260,12 +260,13 @@ footer {
         margin: 0 10%;
         .service{
             margin: 0 auto;
-            
+            line-height: 1.5;
         }
         .hall {
             .reception {
                 max-width: 600px;
             }
+            line-height: 1.5;
         }
         .desk {
             display: block;
@@ -280,6 +281,7 @@ footer {
                 border-radius: 15px;
                 box-shadow: 10px 10px 20px $text;
             }
+            line-height: 1.5;
         }
         form {
             margin: 2em auto;
